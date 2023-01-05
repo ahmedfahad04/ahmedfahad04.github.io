@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio.</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Orbitron:wght@400;800&display=swap');
+
+
+        :root {
+            --bg_color: rgba(79, 73, 79, 0.5);
+            --secondary_color: rgb(91, 245, 245);
+        }
+
+        html,
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 17px;
+            box-sizing: border-box;
+            margin: 0;
+            overflow-x: hidden;
+            /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 800;
+            color: #fff;
+            box-shadow: azure;
+            font-size: 1rem;
+        }
+
+        a:hover:not(.navbar-brand) {
+            border-bottom: 3px solid #333333;
+            color: #444;
+            background-color: rgba(91, 245, 245, 0.9);
+        }
+
+        .navbar {
+            position: static;
+            width: 100%;
+            padding: 0.5rem 2rem;
+            background-color: var(--bg_color);
+            cursor: pointer;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--secondary_color);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(91, 245, 245);
+            background-color: var(--bg_color);
+            padding-top: 1rem;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 3px #316d7b;
+        }
+
+        .SSC .Varsity{
+            height: 100%;
+        }
+
+        .header {
+            margin-top: 5rem;
+        }
+
+        .row {
+            margin-bottom: 5rem;
+        }
+
+
+        .row h4 {
+            font-size: 1.2rem;
+            margin-right: 5rem;
+        }
+
+        .row .btn {
+            margin-top: 1rem;
+            width: 30%;
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+        .row .btn a {
+            text-decoration: none;
+            color: rgb(91, 245, 245);
+            background-color: transparent;
+            font-weight: 800;
+        }
+
+        .row .btn:hover {
+            text-decoration: none;
+            border: 2px solid rgb(91, 245, 245);
+        }
+    </style>
+</head>
+
+<body class="home">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm justify-content-center">
+        <a class="navbar-brand" href="#">Portfolio.</a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="navbar-nav ">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards and Achievement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="h ">Hobbies</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <div class="SSC container">
+        <div class="header text-center">
+            <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
+            <hr class="w-50">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 ">
+                <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12 ">
+                <h2>Rajuk Uttara Model College</h2>
+                <h4>
+                    Rajuk Uttara Model College is a co-educational Bangladeshi secondary school in Uttara, Dhaka about a
+                    kilometer north from Shahjalal International Airport. It was established in 1994. The school teaches
+                    its students in Bengali and English under the Bangladeshi national curriculum.
+                </h4>
+
+                <button class="btn w-50">
+                    <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Varsity container">
+        <div class="header text-center">
+            <h3 class="display-4 font-weight-bold">Honors</h3>
+            <hr class="w-50">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 ">
+                <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12 ">
+                <h2>University of Dhaka</h2>
+                <h4>
+                    The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is the
+                    oldest university in Bangladesh. The university opened its doors to students on July 1st 1921.
+                    Currently it is the largest public research university in Bangladesh, with a student body of 46,150
+                    and a faculty of 1,992.
+                </h4>
+
+                <button class="btn w-50">
+                    <a href="https://www.du.ac.bd/" target="_blank">Read More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+        <p>&copy; <a href="facebook.com/istiaq.ahm"></a>Istiaq Ahmed fahad</p>
+    </div>
+
+</body>
+
+</html>
