@@ -69,14 +69,15 @@
             text-shadow: 2px 2px 3px #316d7b;
         }
 
-        .footer a {
+        .footer a{
             text-decoration: none;
-            color: rgb(91, 245, 245);
+            color: rgba(91, 245, 245, 0.9);
         }
 
-        .footer a:hover {
+        .footer a:hover{
+            border: none;
+            color: aliceblue;
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.5);
             background-color: transparent;
         }
 
@@ -109,16 +110,19 @@
         }
 
 
-        li {
+        .upper .content li {
             display: flex;
             align-items: center;
-            font-size: 1rem;
-            font-weight: 800;
+            font-size: 1.5rem;
         }
 
-
-        figure {
+        
+        .upper figure {
             margin-left: 5rem;
+        }
+
+        .lower .content li{
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -163,8 +167,8 @@
                 <ul>
                     <li>Entitled "Rising Star" in IIT Emerging Cup 2020
                         <figure>
-                            <img src='images/rising_star.jpg' alt='Rising Star' width="500px" height="230px" />
-                            <figcaption>Rising Star in Emerging Cup'20</figcaption>
+                            <img src='images/rising_star.jpg' alt='Rising Star' width="600px" height="300px" />
+                            <figcaption> Rising Star in Emerging Cup'20</figcaption>
                         </figure>
                     </li>
                     <li>2nd Prize in Photography Conteset by Ektukhani Manobota Orgranization.
@@ -175,17 +179,30 @@
                     </li>
                 </ul>
             </div>
+        </section>
+        <section class="lower">
+            <div class="heading">
+                <p>Achievements</p>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        Served as a <strong>PMD (Program Management Director)</strong>  in BYSO (Bangladesh Youngster Social Organization)
+                    </li>
+                    <li>
+                        Worked as a <strong>Freelance SEO Writer</strong>  in Rank Wizard LLC
+                    </li>
+                    <li>
+                       <strong>Campus Ambassador</strong> of Science Bee & Ignite Talents powered by Brillian Resources.
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
-    </section>
-    <section class="lower">
-        <div class="heading">
-            <p>Achievements</p>
-        </div>
-    </section>
-    </div>
+    
     <!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad">Istiaq Ahmed fahad</a></p>
+        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad" target="_blank">Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>

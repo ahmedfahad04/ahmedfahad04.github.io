@@ -26,6 +26,8 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
+            background: linear-gradient(45deg, hsla(300, 4%, 30%, 1) 0%, hsla(180, 89%, 66%, 1) 100%);
+
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
         }
 
@@ -68,12 +70,12 @@
             text-shadow: 2px 2px 3px #316d7b;
         }
 
-        .footer a{
+        .footer a {
             text-decoration: none;
             color: rgba(91, 245, 245, 0.9);
         }
 
-        .footer a:hover{
+        .footer a:hover {
             border: none;
             color: aliceblue;
             text-decoration: none;
@@ -123,21 +125,16 @@
             background-color: transparent;
         }
 
-        .footer a {
-            text-decoration: none;
-            color: rgb(91, 245, 245);
-        }
-
-        .footer a:hover {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.5);
-            background-color: transparent;
-        }
-
-        section{
+        section {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .table {
+            margin: 5rem auto;
+            width: 80%;
+            height: 100%;
         }
 
         .upper {
@@ -149,7 +146,6 @@
             background: linear-gradient(45deg, hsla(300, 4%, 30%, 1) 0%, hsla(180, 89%, 66%, 1) 100%);
             height: 100vh;
         }
-
     </style>
 </head>
 
@@ -185,18 +181,56 @@
 
     <!-- Main Section -->
     <div class="hero">
+        <section class="table ">
+            <div class="table-responsive" >
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Degree</th>
+                            <th>Institute</th>
+                            <th>Group Major</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2017</td>
+                            <td>SSC</td>
+                            <td>Rajuk Uttara Model College</td>
+                            <td>Science</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>HSC</td>
+                            <td>Rajuk Uttara Model College</td>
+                            <td>Science</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Honours</td>
+                            <td>University of Dhaka</td>
+                            <td>BSSE</td>
+                            <td>Null</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
         <section class="upper">
             <div class="SSC container">
                 <div class="header text-center">
                     <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
                     <hr class="w-50">
                 </div>
-    
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12 ">
                         <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
                     </div>
-    
+
                     <div class="col-lg-6 col-md-6 col-12 ">
                         <h2>Rajuk Uttara Model College</h2>
                         <h4>
@@ -206,9 +240,10 @@
                             teaches
                             its students in Bengali and English under the Bangladeshi national curriculum.
                         </h4>
-    
+
                         <button class="btn w-50">
-                            <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read More</a>
+                            <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read
+                                More</a>
                         </button>
                     </div>
                 </div>
@@ -220,22 +255,24 @@
                     <h3 class="display-4 font-weight-bold">Honours</h3>
                     <hr class="w-50">
                 </div>
-    
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12 ">
                         <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
                     </div>
-    
+
                     <div class="col-lg-6 col-md-6 col-12 ">
                         <h2>University of Dhaka</h2>
                         <h4>
-                            The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is the
-                            oldest university in Bangladesh. The university opened its doors to students on July 1st 1921.
+                            The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is
+                            the
+                            oldest university in Bangladesh. The university opened its doors to students on July 1st
+                            1921.
                             Currently it is the largest public research university in Bangladesh, with a student body of
                             46,150
                             and a faculty of 1,992.
                         </h4>
-    
+
                         <button class="btn w-50">
                             <a href="https://www.du.ac.bd/" target="_blank">Read More</a>
                         </button>
@@ -244,9 +281,11 @@
             </div>
         </section>
     </div>
+
+
     <!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad">Istiaq Ahmed fahad</a></p>
+        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad" target="_blank">Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>
