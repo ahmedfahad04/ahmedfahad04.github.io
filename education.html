@@ -3,14 +3,12 @@
 
 <head>
     <title>Portfolio.</title>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Orbitron:wght@400;800&display=swap');
@@ -28,14 +26,12 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
-            background-color: rgba(79, 73, 79, 0.5);
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
         }
 
         a {
             text-decoration: none;
             font-weight: 800;
-            color: #fff;
             box-shadow: azure;
             font-size: 1rem;
         }
@@ -47,11 +43,10 @@
         }
 
         .navbar {
-            position: static;
+            position: fixed;
             width: 100%;
             padding: 0.5rem 2rem;
             background-color: var(--bg_color);
-            cursor: pointer;
         }
 
         .navbar .navbar-brand {
@@ -73,6 +68,18 @@
             text-shadow: 2px 2px 3px #316d7b;
         }
 
+        .footer a{
+            text-decoration: none;
+            color: rgba(91, 245, 245, 0.9);
+        }
+
+        .footer a:hover{
+            border: none;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
         .SSC .Varsity {
             height: 100%;
         }
@@ -83,6 +90,10 @@
 
         .row {
             margin-bottom: 5rem;
+        }
+
+        .row h2 {
+            margin-top: 1.5rem;
         }
 
 
@@ -98,40 +109,74 @@
             border-radius: 10px;
         }
 
-        .row .btn a {
+        .btn a {
             text-decoration: none;
             color: rgb(91, 245, 245);
             background-color: transparent;
             font-weight: 800;
         }
 
-        .row .btn:hover {
+        .row .btn a:hover {
+            border: none;
+            color: aliceblue;
             text-decoration: none;
-            border: 2px solid rgb(91, 245, 245);
+            background-color: transparent;
         }
+
+        .footer a {
+            text-decoration: none;
+            color: rgb(91, 245, 245);
+        }
+
+        .footer a:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: transparent;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .upper {
+            background: linear-gradient(270deg, hsla(300, 4%, 30%, 1) 0%, hsla(180, 89%, 66%, 1) 100%);
+            height: 100vh;
+        }
+
+        .lower {
+            background: linear-gradient(45deg, hsla(300, 4%, 30%, 1) 0%, hsla(180, 89%, 66%, 1) 100%);
+            height: 100vh;
+        }
+
     </style>
 </head>
 
 <body class="home">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm justify-content-center">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <a class="navbar-brand" href="#">Portfolio.</a>
 
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-            <ul class="navbar-nav ">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="education.html">Education</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="awards.html">Awards and Achievement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="h ">Hobbies</a>
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
                 </li>
 
             </ul>
@@ -139,68 +184,69 @@
     </nav>
 
     <!-- Main Section -->
-
-    <div class="container">
-
-        <div class="SSC container">
-            <div class="header text-center">
-                <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
-                <hr class="w-50">
-            </div>
-    
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12 ">
-                    <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
+    <div class="hero">
+        <section class="upper">
+            <div class="SSC container">
+                <div class="header text-center">
+                    <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
+                    <hr class="w-50">
                 </div>
     
-                <div class="col-lg-6 col-md-6 col-12 ">
-                    <h2>Rajuk Uttara Model College</h2>
-                    <h4>
-                        Rajuk Uttara Model College is a co-educational Bangladeshi secondary school in Uttara, Dhaka about a
-                        kilometer north from Shahjalal International Airport. It was established in 1994. The school teaches
-                        its students in Bengali and English under the Bangladeshi national curriculum.
-                    </h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
     
-                    <button class="btn w-50">
-                        <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read More</a>
-                    </button>
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <h2>Rajuk Uttara Model College</h2>
+                        <h4>
+                            Rajuk Uttara Model College is a co-educational Bangladeshi secondary school in Uttara, Dhaka
+                            about a
+                            kilometer north from Shahjalal International Airport. It was established in 1994. The school
+                            teaches
+                            its students in Bengali and English under the Bangladeshi national curriculum.
+                        </h4>
+    
+                        <button class="btn w-50">
+                            <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read More</a>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="Varsity container">
-            <div class="header text-center">
-                <h3 class="display-4 font-weight-bold">Honors</h3>
-                <hr class="w-50">
-            </div>
-    
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12 ">
-                    <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
+        </section>
+        <section class="lower">
+            <div class="Varsity container">
+                <div class="header text-center">
+                    <h3 class="display-4 font-weight-bold">Honours</h3>
+                    <hr class="w-50">
                 </div>
     
-                <div class="col-lg-6 col-md-6 col-12 ">
-                    <h2>University of Dhaka</h2>
-                    <h4>
-                        The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is the
-                        oldest university in Bangladesh. The university opened its doors to students on July 1st 1921.
-                        Currently it is the largest public research university in Bangladesh, with a student body of 46,150
-                        and a faculty of 1,992.
-                    </h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
+                    </div>
     
-                    <button class="btn w-50">
-                        <a href="https://www.du.ac.bd/" target="_blank">Read More</a>
-                    </button>
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <h2>University of Dhaka</h2>
+                        <h4>
+                            The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is the
+                            oldest university in Bangladesh. The university opened its doors to students on July 1st 1921.
+                            Currently it is the largest public research university in Bangladesh, with a student body of
+                            46,150
+                            and a faculty of 1,992.
+                        </h4>
+    
+                        <button class="btn w-50">
+                            <a href="https://www.du.ac.bd/" target="_blank">Read More</a>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
     </div>
-
-
     <!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; <a href="facebook.com/istiaq.ahm"></a>Istiaq Ahmed fahad</p>
+        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad">Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>

@@ -1,0 +1,94 @@
+.SSC .Varsity {
+            height: 100%;
+        }
+
+        .header {
+            margin-top: 5rem;
+        }
+
+        .row {
+            margin-bottom: 5rem;
+        }
+
+
+        .row h4 {
+            font-size: 1.2rem;
+            margin-right: 5rem;
+        }
+
+        .row .btn {
+            margin-top: 1rem;
+            width: 30%;
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+        .row .btn a {
+            text-decoration: none;
+            color: rgb(91, 245, 245);
+            background-color: transparent;
+            font-weight: 800;
+        }
+
+        .row .btn:hover {
+            text-decoration: none;
+           
+
+
+
+<div class="container">
+
+        <div class="SSC container">
+            <div class="header text-center">
+                <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
+                <hr class="w-50">
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <h2>Rajuk Uttara Model College</h2>
+                    <h4>
+                        Rajuk Uttara Model College is a co-educational Bangladeshi secondary school in Uttara, Dhaka about a
+                        kilometer north from Shahjalal International Airport. It was established in 1994. The school teaches
+                        its students in Bengali and English under the Bangladeshi national curriculum.
+                    </h4>
+    
+                    <button class="btn w-50">
+                        <a href="https://en.wikipedia.org/wiki/Rajuk_Uttara_Model_College" target="_blank">Read More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Varsity container">
+            <div class="header text-center">
+                <h3 class="display-4 font-weight-bold">Honours</h3>
+                <hr class="w-50">
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <h2>University of Dhaka</h2>
+                    <h4>
+                        The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is the
+                        oldest university in Bangladesh. The university opened its doors to students on July 1st 1921.
+                        Currently it is the largest public research university in Bangladesh, with a student body of 46,150
+                        and a faculty of 1,992.
+                    </h4>
+    
+                    <button class="btn w-50">
+                        <a href="https://www.du.ac.bd/" target="_blank">Read More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>

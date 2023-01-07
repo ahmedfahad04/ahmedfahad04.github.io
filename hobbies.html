@@ -3,92 +3,115 @@
 
 <head>
     <title>Portfolio.</title>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Orbitron:wght@400;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Orbitron:wght@400;800&display=swap');
 
-        html, body {
+
+        :root {
+            --bg_color: rgba(79, 73, 79, 0.5);
+            --secondary_color: rgb(91, 245, 245);
+        }
+
+        html,
+        body {
             font-family: 'Josefin Sans', sans-serif;
             font-size: 17px;
             box-sizing: border-box;
             margin: 0;
-            height: 100%;
+            overflow-x: hidden;
+            /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
+            overflow-y: hidden;
         }
 
         a {
             text-decoration: none;
             font-weight: 800;
-            color: #fff;
             box-shadow: azure;
-            font-size: 20px;
+            font-size: 1rem;
         }
 
-        a:hover:not(.navbar-brand)  {
-            border: 2px solid #333333;
+        a:hover:not(.navbar-brand) {
+            border-bottom: 3px solid #333333;
             color: #444;
-            background-color: rgb(159, 249, 249);
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        li {
-            display: inline-block;
-            margin: 0 5px;
+            background-color: rgba(91, 245, 245, 0.9);
         }
 
         .navbar {
             position: fixed;
             width: 100%;
             padding: 0.5rem 2rem;
-            min-height: 10px;
-            background-color: rgba(79, 73, 79, 0.5);
+            background-color: var(--bg_color);
         }
 
         .navbar .navbar-brand {
             font-size: 2rem;
             font-weight: 800;
-            color: rgb(159, 249, 249);
+            color: var(--secondary_color);
         }
 
         .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
-            color: #FFFFFF;
-            background-color: rgba(79, 73, 79, 0.5);
+            color: rgb(91, 245, 245);
+            background-color: var(--bg_color);
             padding-top: 1rem;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 3px #316d7b;
         }
 
-        .banner-image{
+        .banner-image {
             background-image: url('images/profile4.jpg');
             background-size: cover;
         }
 
-        .text-right{
-            background-color: blue;
-            color: rgb(251, 255, 240);
-            width: 80%;
-        }
-
-        .col-sm-4{
+        .col-sm-4 {
             color: whitesmoke;
             width: 80%;
             padding-bottom: 12rem;
-            background-color: rgba(79, 73, 79, 0.5);
+        }
+
+        .banner-text {
+            position: absolute;
+            left: 65%;
+            top: 25%;
+            text-shadow: 2px 2px 3px #316d7b;
+            font-weight: 500;
+            font-size: 1em;
+            height: 50%;
+        }
+
+        .banner-text h1 {
+            font-size: 3.2em;
+        }
+
+        .banner-text h5 {
+            font-size: 1.1em;
+            color: #e6fbfb;
+            word-spacing: 7px;
+            letter-spacing: 7px;
+            font-weight: lighter;
+            text-transform: uppercase;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .footer a:hover{
+            text-decoration: none;
+            color:rgba(255, 255, 255, 0.5);
+            background-color: transparent;
         }
     </style>
 </head>
@@ -96,23 +119,27 @@
 <body class="home">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm justify-content-center">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <a class="navbar-brand" href="#">Portfolio.</a>
-            
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-            <ul class="navbar-nav ">
-                
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards and Achievement</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Awards and Achievement</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Hobbies</a>
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
                 </li>
 
             </ul>
@@ -120,25 +147,29 @@
     </nav>
 
     <!-- Banner Image -->
-    <div class="banner-image w-100 vh-100 d-flex jIstiaq Ahmed Fahadustify-content-center align-items-center">
-        
-        <div class="col-sm-8"></div>        
-        <div class="col-sm-4">
-            <p style="letter-spacing: 2px;">Hello and Welcome</p>
-            <p style="font-size: 3em;">I am <strong style="color: rgb(159, 249, 249);">Istiaq Ahmed Fahad</strong> </p>
-            <p style="letter-spacing: 2px;">A passionate lerarner from Bangladesh</p>
-        </div>        
+    <div class="banner-image img-fluid w-100 vh-100">
+
+        <div class="col-sm-8">
+
+        </div>
+        <div class="col-sm-4 banner-text">
+            <h1 style="font-size: 3.2em;">I am <strong
+                    style="color: var(--secondary_color); font-weight: 800; font-size: 4.5rem">Istiaq Ahmed
+                    Fahad</strong> </h1>
+            <h5 style="letter-spacing: 2px;">A Tech Geek from Bangladesh</h3>
+        </div>
     </div>
+
 
     <!-- Main Content -->
     <div class="main-content container my-5 d-grid gap-5">
-        
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-        <p>&copy; <a href="facebook.com/istiaq.ahm"></a>Istiaq Ahmed fahad</p>
+    <div class="footer text-center">
+        <p>&copy; <a href="https://www.facebook.com/istiaqahmed.fahad" target="_blank">Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>
+
 </html>
