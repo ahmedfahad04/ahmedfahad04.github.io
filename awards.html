@@ -30,19 +30,6 @@
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
         }
 
-        a {
-            text-decoration: none;
-            font-weight: 800;
-            box-shadow: azure;
-            font-size: 1rem;
-        }
-
-        a:hover:not(.navbar-brand) {
-            border-bottom: 3px solid #333333;
-            color: #444;
-            background-color: rgba(91, 245, 245, 0.9);
-        }
-
         .navbar {
             position: fixed;
             width: 100%;
@@ -56,6 +43,16 @@
             color: var(--secondary_color);
         }
 
+        .navbar .nav-item a {
+            color: antiquewhite !important;
+        }
+
+        .navbar .nav-item a:hover {
+            color: #444 !important;
+            border-bottom: 3px solid #333333;
+            background-color: rgba(91, 245, 245, 0.9);
+        }
+
         .footer {
             position: fixed;
             left: 0;
@@ -66,7 +63,6 @@
             padding-top: 1rem;
             font-weight: 800;
             font-size: 1.2rem;
-            text-shadow: 2px 2px 3px #316d7b;
         }
 
         .footer a{
@@ -83,7 +79,6 @@
 
         section {
             display: flex;
-            top: 50%;
             align-items: center;
         }
 
@@ -109,13 +104,11 @@
             margin: auto;
         }
 
-
         .upper .content li {
             display: flex;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
-
         
         .upper figure {
             margin-left: 5rem;
@@ -173,7 +166,7 @@
                     </li>
                     <li>2nd Prize in Photography Conteset by Ektukhani Manobota Orgranization.
                         <figure>
-                            <img src='images/photo_contest.jpg' alt='Rising Star' width="300px" height="400px" />
+                            <img src='images/photo_contest.jpg' alt='Rising Star' width="200px" height="280px" />
                             <figcaption>Photography Contest'20</figcaption>
                         </figure>
                     </li>
@@ -202,7 +195,7 @@
     
     <!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; <a href="https://facebook.com/istiaqahmed.fahad" target="_blank">Istiaq Ahmed fahad</a></p>
+        <p><a href="https://facebook.com/istiaqahmed.fahad" target="_blank">&copy; Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>

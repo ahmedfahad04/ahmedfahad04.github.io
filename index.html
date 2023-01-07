@@ -26,22 +26,9 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
-            background: rgb(2,0,36);
-            background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(16,31,31,1) 31%, rgba(0,230,255,1) 100%); 
+            background: rgb(2, 0, 36);
+            background: linear-gradient(36deg, rgba(2, 0, 36, 1) 0%, rgba(16, 31, 31, 1) 31%, rgba(0, 230, 255, 1) 100%);
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: 800;
-            box-shadow: azure;
-            font-size: 1rem;
-        }
-
-        a:hover:not(.navbar-brand) {
-            border-bottom: 3px solid #333333;
-            color: #444;
-            background-color: rgba(91, 245, 245, 0.9);
         }
 
         .navbar {
@@ -57,6 +44,16 @@
             color: var(--secondary_color);
         }
 
+        .navbar .nav-item a {
+            color: antiquewhite !important;
+        }
+
+        .navbar .nav-item a:hover {
+            color: #444 !important;
+            border-bottom: 3px solid #333333;
+            background-color: rgba(91, 245, 245, 0.9);
+        }
+
         .footer {
             position: fixed;
             left: 0;
@@ -68,6 +65,18 @@
             font-weight: 800;
             font-size: 1.2rem;
             text-shadow: 2px 2px 3px #316d7b;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: rgba(91, 245, 245, 0.9);
+        }
+
+        .footer a:hover {
+            border: none;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: transparent;
         }
 
         .banner-image {
@@ -99,36 +108,22 @@
             text-transform: uppercase;
         }
 
-        .footer a {
-            text-decoration: none;
-            color: rgba(91, 245, 245, 0.9);
-        }
-
-        .footer a:hover {
-            border: none;
-            color: aliceblue;
-            text-decoration: none;
-            background-color: transparent;
-        }
-
-
         .banner {
-            height: 100vh;
+            max-height: 100vh;
         }
 
         .about-me {
             margin: 5rem;
-            height: 80vh;
+            max-height: 100vh;
+            min-height: 80vh;
         }
 
         .col-sm-7 {
-            float: right;
             font-size: 1.3rem;
             color: whitesmoke;
         }
 
         .col-sm-5 {
-            clear: right;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -185,12 +180,15 @@
                             Fahad</strong> </h1>
                     <h5 style="letter-spacing: 2px;">A Tech Geek from Bangladesh</h3>
                 </div>
+
             </div>
         </section>
         <section class="about-me">
+
             <div class="post-heading text-center mt-8">
                 <h1 style="color: rgb(8, 248, 248);">About Me</h1>
             </div>
+
             <div class="row">
                 <div class="col-sm-7">
                     <p>
@@ -199,32 +197,35 @@
                         such as Python and C++, and I am always looking to learn and expand my skillset.
                         <br>
                         <br>
-                        In my current role, I have had the opportunity to work on a variety of projects, ranging from
+                        <!-- In my current role, I have had the opportunity to work on a variety of projects, ranging from
                         small utility applications to large-scale web platforms. I take pride in my ability to deliver
                         high-quality code and solve complex problems, and I am always looking for new challenges to
                         tackle.
-                        <br>
+                        <br> -->
                         <br>
                         Outside of my professional life, I enjoy staying up to date with the latest developments in the
                         tech industry and contributing to open source projects. You can find some of my work on my
                         GitHub profile, and you can connect with me on Facebook to stay in touch.
                         <br>
-                        <br>
+                        <!-- <br>
                         Thank you for visiting my portfolio site! I hope you find my work and experience interesting,
-                        and I look forward to connecting with you.
+                        and I look forward to connecting with you. -->
                     </p>
                 </div>
+
                 <div class="col-sm-5">
                     <img src="images/profile0.jpg" alt="" class="img-fluid" width="500px" height="500px">
                 </div>
+
             </div>
+
         </section>
     </div>
 
 
     <!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; <a href="https://www.facebook.com/istiaqahmed.fahad" target="_blank">Istiaq Ahmed fahad</a></p>
+        <p><a href="https://facebook.com/istiaqahmed.fahad" target="_blank">&copy; Istiaq Ahmed fahad</a></p>
     </div>
 
 </body>
