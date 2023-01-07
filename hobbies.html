@@ -1,8 +1,11 @@
+<!-- Live Preview: https://ahmedfahad04.github.io/ -->
+
+
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>Portfolio.</title>
+    <title>Hobbies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -26,12 +29,11 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
-
+            background: linear-gradient(350deg, rgba(2, 0, 36, 1) 0%, rgba(16, 31, 31, 1) 31%, rgba(0, 230, 255, 1) 100%);
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
         }
 
         .navbar {
-            position: fixed;
             width: 100%;
             padding: 0.5rem 2rem;
             background-color: var(--bg_color);
@@ -53,17 +55,9 @@
             background-color: rgba(91, 245, 245, 0.9);
         }
 
+
         .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
             color: rgb(91, 245, 245);
-            background-color: var(--bg_color);
-            padding-top: 1rem;
-            font-weight: 800;
-            font-size: 1.2rem;
-            text-shadow: 2px 2px 3px #316d7b;
         }
 
         .footer a {
@@ -76,12 +70,6 @@
             color: aliceblue;
             text-decoration: none;
             background-color: transparent;
-        }
-
-        .hobbies {
-            height: 100vh;
-            background: linear-gradient(180deg, hsla(300, 4%, 30%, 1) 0%, hsla(180, 89%, 66%, 1) 100%);
-            font-size: 2rem;
         }
 
         section {
@@ -101,12 +89,14 @@
 
         .heading {
             writing-mode: sideways-lr;
-            letter-spacing: 1rem;
+            letter-spacing: 0.8rem;
             font-size: 3rem;
             color: rgba(255, 255, 255, 0.387);
         }
 
-
+        .hobbies li {
+            font-size: 2.2rem;
+        }
     </style>
 </head>
 
@@ -151,29 +141,49 @@
         </section>
         <section class="photo-carousal">
 
-            <div class="heading">
-                <p>Photo Gallery</p>
+              <div class="post-heading text-center mt-8 heading">
+                <h1 style="color: rgb(8, 248, 248);">Photo Gallary</h1>
             </div>
             
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demo" class="carousel slide mycr" data-ride="carousel">
 
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
                     <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                    <li data-target="#demo" data-slide-to="7"></li>
                 </ul>
 
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/memorial.jpeg" alt="Los Angeles" width="1100" height="500">
+                        <img src="images/memorial.jpeg" alt="National Memorial" width="800" height="500">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/rice.jpeg" alt="Chicago" width="1100" height="500">
+                        <img src="images/curzon.jpg" alt="Curzon Hall" width="800" height="500">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/rail.jpeg" alt="New York" width="1100" height="500">
+                        <img src="images/rice.jpeg" alt="Paddy field" width="800" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/rail.jpeg" alt="Railway" width="800" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bench.jpeg" alt="Bamboo Bench" width="800" height="500">
+                    </div>  
+                    <div class="carousel-item">
+                        <img src="images/jnu.jpeg" alt="Jahangir Nagar University" width="800" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/flower.jpeg" alt="Flower" width="800" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/hut.jpeg" alt="Hut" width="800" height="500">
                     </div>
                 </div>
 
