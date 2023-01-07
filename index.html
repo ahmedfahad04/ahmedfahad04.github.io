@@ -26,8 +26,9 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
+            background: rgb(2,0,36);
+            background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(16,31,31,1) 31%, rgba(0,230,255,1) 100%); 
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
-            overflow-y: hidden;
         }
 
         a {
@@ -74,12 +75,6 @@
             background-size: cover;
         }
 
-        .col-sm-4 {
-            color: whitesmoke;
-            width: 80%;
-            padding-bottom: 12rem;
-        }
-
         .banner-text {
             position: absolute;
             left: 65%;
@@ -92,6 +87,7 @@
 
         .banner-text h1 {
             font-size: 3.2em;
+            color: whitesmoke;
         }
 
         .banner-text h5 {
@@ -103,16 +99,44 @@
             text-transform: uppercase;
         }
 
-        .footer a{
+        .footer a {
             text-decoration: none;
             color: rgba(91, 245, 245, 0.9);
         }
 
-        .footer a:hover{
+        .footer a:hover {
             border: none;
             color: aliceblue;
             text-decoration: none;
             background-color: transparent;
+        }
+
+
+        .banner {
+            height: 100vh;
+        }
+
+        .about-me {
+            margin: 5rem;
+            height: 80vh;
+        }
+
+        .col-sm-7 {
+            float: right;
+            font-size: 1.3rem;
+            color: whitesmoke;
+        }
+
+        .col-sm-5 {
+            clear: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            margin-top: 2rem;
+            padding: 1rem;
         }
     </style>
 </head>
@@ -147,24 +171,56 @@
         </div>
     </nav>
 
-    <!-- Banner Image -->
-    <div class="banner-image img-fluid w-100 vh-100">
-
-        <div class="col-sm-8">
-
-        </div>
-        <div class="col-sm-4 banner-text">
-            <h1 style="font-size: 3.2em;">I am <strong
-                    style="color: var(--secondary_color); font-weight: 800; font-size: 4.5rem">Istiaq Ahmed
-                    Fahad</strong> </h1>
-            <h5 style="letter-spacing: 2px;">A Tech Geek from Bangladesh</h3>
-        </div>
-    </div>
 
 
     <!-- Main Content -->
-    <div class="main-content container my-5 d-grid gap-5">
+    <div class="hero">
+        <section class="banner">
+            <!-- Banner Image -->
+            <div class="banner-image img-fluid w-100 vh-100">
+
+                <div class="banner-text">
+                    <h1 style="font-size: 3.2em;">I am <strong
+                            style="color: var(--secondary_color); font-weight: 800; font-size: 4.5rem">Istiaq Ahmed
+                            Fahad</strong> </h1>
+                    <h5 style="letter-spacing: 2px;">A Tech Geek from Bangladesh</h3>
+                </div>
+            </div>
+        </section>
+        <section class="about-me">
+            <div class="post-heading text-center mt-8">
+                <h1 style="color: rgb(8, 248, 248);">About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <p>
+                        Hi there! My name is Ahmed Fahad, and I am a software developer with a passion for creating
+                        innovative and user-friendly applications. I have a strong foundation in programming languages
+                        such as Python and C++, and I am always looking to learn and expand my skillset.
+                        <br>
+                        <br>
+                        In my current role, I have had the opportunity to work on a variety of projects, ranging from
+                        small utility applications to large-scale web platforms. I take pride in my ability to deliver
+                        high-quality code and solve complex problems, and I am always looking for new challenges to
+                        tackle.
+                        <br>
+                        <br>
+                        Outside of my professional life, I enjoy staying up to date with the latest developments in the
+                        tech industry and contributing to open source projects. You can find some of my work on my
+                        GitHub profile, and you can connect with me on Facebook to stay in touch.
+                        <br>
+                        <br>
+                        Thank you for visiting my portfolio site! I hope you find my work and experience interesting,
+                        and I look forward to connecting with you.
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    <img src="images/profile0.jpg" alt="" class="img-fluid" width="500px" height="500px">
+                </div>
+            </div>
+        </section>
     </div>
+
 
     <!-- Footer -->
     <div class="footer text-center">
