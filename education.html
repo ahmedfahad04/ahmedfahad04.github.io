@@ -29,6 +29,7 @@
             box-sizing: border-box;
             margin: 0;
             overflow-x: hidden;
+            scroll-behavior: smooth;
             background: linear-gradient(50deg, rgba(2, 0, 36, 1) 0%, rgba(16, 31, 31, 1) 31%, rgba(0, 230, 255, 1) 100%);
             /*overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, */
         }
@@ -55,9 +56,12 @@
             background-color: rgba(91, 245, 245, 0.9);
         }
 
-        .footer a {
-            text-decoration: none;
-            color: rgba(91, 245, 245, 0.9);
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            color: rgb(2, 34, 34);
         }
 
         .footer a:hover {
@@ -77,7 +81,12 @@
         }
 
         .header {
-            margin-top: 5rem;
+            margin-top: 1rem;
+        }
+
+        .row h2 {
+            font-size: 1.7rem;
+            font-weight: 800;
         }
 
         .row h4 {
@@ -188,6 +197,13 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>2015</td>
+                                <td>JSC</td>
+                                <td><a href="#p2"> Rajuk Uttara Model College </a></td>
+                                <td>Science</td>
+                                <td>5.00</td>
+                            </tr>
+                            <tr>
                                 <td>2017</td>
                                 <td>SSC</td>
                                 <td><a href="#p2"> Rajuk Uttara Model College </a></td>
@@ -216,16 +232,16 @@
         <section class="upper" id="p2">
             <div class="SSC container">
                 <div class="header text-center">
-                    <h3 class="display-4 font-weight-bold">SSC & HSC</h3>
+                    <h3 class="display-4 font-weight-bold">School & College</h3>
                     <hr class="w-50">
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="col-lg-6 col-sm-4 col-md-6 col-12 ">
                         <img src="images/rajuk.jpg" class="img-fluid img-thumbnail" alt="">
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="col-lg-6 col-sm-8 col-md-6 col-12 ">
                         <h2>Rajuk Uttara Model College</h2>
                         <h4>
                             Rajuk Uttara Model College is a co-educational Bangladeshi secondary school in Uttara, Dhaka
@@ -246,16 +262,16 @@
         <section class="lower" id="p3">
             <div class="Varsity container">
                 <div class="header text-center">
-                    <h3 class="display-4 font-weight-bold">Honours</h3>
+                    <h3 class="display-4 font-weight-bold">University</h3>
                     <hr class="w-50">
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="col-lg-6 col-sm-4 col-md-6 col-12">
                         <img src="images/du.jpg" class="img-fluid img-thumbnail" alt="" height="300rem">
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="col-lg-6 col-sm-8 col-md-6 col-12">
                         <h2>University of Dhaka</h2>
                         <h4>
                             The University of Dhaka is a public research university located in Dhaka, Bangladesh. It is
