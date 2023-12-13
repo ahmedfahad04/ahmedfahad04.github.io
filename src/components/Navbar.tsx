@@ -3,23 +3,23 @@ import { Link } from "react-scroll";
 export default function Navbar() {
   return (
     <header className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
         <a className="title-font font-medium text-white mb-4 md:mb-0">
           <Link
             to="about"
             smooth={true}
             duration={500}
-            className="ml-3 text-xl flex items-center justify-center cursor-pointer"
+            className="md:ml-5 text-xl flex items-center justify-center cursor-pointer"
           >
             <img src="/logo.png" width={35} height={35}></img>
           </Link>
         </a>
-        <nav className="text-white md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+        <nav className="text-white md:flex md:justify-center md:items-center md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 text-base">
           <Link
             to="projects"
             smooth={true}
             duration={500}
-            className="mr-5 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
+            className="px-2 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
           >
             Projects
           </Link>
@@ -27,7 +27,7 @@ export default function Navbar() {
             to="skills"
             smooth={true}
             duration={500}
-            className="mr-5 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
+            className="px-2 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
           >
             Skills
           </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
             to="contact"
             smooth={true}
             duration={500}
-            className="mr-5 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
+            className="px-2 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105"
           >
             Contacts
           </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
         <a
           href="#contact"
           target="blank"
-          className="text-white inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          className="text-white inline-flex items-cente bg-gray-800 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0"
         >
           {/* facebook icon  */}
           <a

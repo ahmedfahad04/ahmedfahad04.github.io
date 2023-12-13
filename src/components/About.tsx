@@ -1,6 +1,9 @@
+import { useMediaQuery } from "react-responsive";
 import { TypeAnimation } from "react-type-animation";
 
 export default function About() {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   return (
     <section
       id="about"
@@ -50,8 +53,8 @@ export default function About() {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="20"
-                  height="20"
+                  width="30"
+                  height="30"
                   viewBox="0 0 48 48"
                 >
                   <linearGradient
@@ -87,13 +90,16 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded w-4/5 filter grayscale-0 hover:grayscale transition-all ease-linear duration-500 hover:scale-105 cursor-pointer"
-            alt="hero"
-            src="/hero.jpg"
-          />
-        </div>
+
+        {!isMobile && (
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              className="object-cover object-center rounded filter grayscale-0 hover:grayscale transition-all ease-linear duration-500 hover:scale-105 cursor-pointer"
+              alt="hero"
+              src="/hero.jpg"
+            />
+          </div>
+        )}
       </div>
     </section>
   );
