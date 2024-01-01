@@ -1,20 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import CourseHomePage from "./components/Course_Page/CourseHomePage";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <main className="font-robotoMed">
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+    <main>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/course" element={<CourseHomePage />}></Route>
+      </Routes>
     </main>
   );
 }
