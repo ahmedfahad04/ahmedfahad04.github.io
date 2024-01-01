@@ -21,6 +21,8 @@ export default function About() {
                   1500,
                   "I am a Linux Enthusiast",
                   1500,
+                  "I am a Python Developer",
+                  1500,
                 ]}
                 wrapper="span"
                 speed={50}

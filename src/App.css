@@ -1,13 +1,14 @@
 @font-face {
     font-family: 'roboto_slab';
-    src: url('../public/fonts/roboto_slab.ttf');
+    src: url('../fonts/roboto_slab.ttf');
 }
 
 @font-face {
     font-family: 'playfair_display';
-    src: url('../public/fonts/playfair_display.ttf');
+    src: url('../fonts/playfair_display.ttf');
 }
 
 * {
     font-family: roboto_slab;
 }
+

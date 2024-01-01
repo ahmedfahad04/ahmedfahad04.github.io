@@ -1,0 +1,21 @@
+/* styles.css */
+.gradient-background {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(54deg, rgba(2, 0, 36, 1) 0%, rgba(35, 35, 79, 1) 41%, rgba(0, 212, 255, 1) 100%);
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

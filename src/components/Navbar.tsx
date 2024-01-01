@@ -1,9 +1,14 @@
+import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import CourseBar from "./Course_Page/CourseBar";
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
+    <header className="bg-gray-800 sticky top-0 z-10">
+      <RouterLink to="/course">
+        <CourseBar />
+      </RouterLink>
+      <div className="font-semibold mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center justify-between">
         <a className="title-font font-medium text-white mb-4 md:mb-0">
           <Link
             to="about"
@@ -14,7 +19,8 @@ export default function Navbar() {
             <img src="/logo.png" width={35} height={35}></img>
           </Link>
         </a>
-        <nav className="text-white md:flex md:justify-center md:items-center md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 text-base">
+
+        <nav className="text-white md:flex md:justify-between md:items-center md:ml-4 md:py-1 md:pl-4 md:border-gray-700 text-base">
           <Link
             to="projects"
             smooth={true}

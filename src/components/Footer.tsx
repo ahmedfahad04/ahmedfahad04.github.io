@@ -4,10 +4,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p className="text-sm">
           ©️ All rights reserved by{" "}
-          <a
-            href="https://www.linkedin.com/in/ahmedfahad04/"
-            className="text-blue-600"
-          >
+          <a href="/" className="text-blue-600">
             Istiaq Ahmed Fahad
           </a>
         </p>
