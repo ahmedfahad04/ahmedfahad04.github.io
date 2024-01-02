@@ -1,6 +1,7 @@
 export default function CourseCard() {
   return (
     <div className="relative flex flex-col mt-4 text-gray-700 bg-white shadow-lg shadow-slate-500 bg-clip-border rounded-xl w-[420px]">
+      {/**Card Image */}
       <div className="relative h-50 mx-4 mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
         <img
           src="../../../course_cover_2.jpg"
@@ -9,6 +10,8 @@ export default function CourseCard() {
           alt="card-image"
         />
       </div>
+
+      {/**Inner Text Description */}
       <div className="p-6">
         <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
           Hands-on Python and Basic Data Analysis for Absolute Beginners
@@ -40,6 +43,8 @@ export default function CourseCard() {
           </div>
         </div>
       </div>
+
+      {/** whatsapp and gmail button */}
       <div className="p-6 pt-0 flex flex-row justify-around">
         <a href="http://wa.me/+8801766610087">
           <button
