@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import CourseCard from "./CourseCard";
+import CourseContent from "./CourseContent";
 
 export default function CourseHomePage() {
   return (
@@ -11,9 +12,11 @@ export default function CourseHomePage() {
           <div className="flex justify-center">
             <CourseCard />
           </div>
+          {/* Bottom Section */}
+          <div className="mt-2 bg-sky-950 flex flex-col justify-center items-center">
+            <CourseContent />
+          </div>
         </div>
-
-        {/* <div className="bg-slate-900 h-3/4">Below Section</div> */}
       </div>
 
       {/* Footer */}
