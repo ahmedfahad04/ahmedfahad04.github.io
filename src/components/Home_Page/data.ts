@@ -84,3 +84,36 @@ export const certificates = [
     },
 
 ]
+
+export const experiences = [
+    {
+        imageUrl: '/exp/cefalo.png',
+        designation: 'Trainee Software Engineer',
+        organization: 'Cefalo Bangladesh Ltd.',
+        timeline: 'Aug 2024 - Present',
+    },
+    {
+        imageUrl: '/exp/dnd.png',
+        designation: 'Research Intern',
+        organization: 'DnD Lab',
+        timeline: 'Nov 2023 - Present',
+    },
+    {
+        imageUrl: '/exp/uiuc.png',
+        designation: 'Research Intern',
+        organization: 'UIUC Summer Research Program',
+        timeline: 'May 2024 - Aug 2024',
+    },
+    {
+        imageUrl: '/exp/vivasoft.png',
+        designation: 'Trainee Software Engineer',
+        organization: 'Vivasoft Limited',
+        timeline: 'Sep 2023 - Feb 2024',
+    },
+    {
+        imageUrl: '/exp/optagen.jpeg',
+        designation: 'Python Developer',
+        organization: 'Optagen Technologies',
+        timeline: 'Jul 2021 - Jun 2023',
+    },
+]

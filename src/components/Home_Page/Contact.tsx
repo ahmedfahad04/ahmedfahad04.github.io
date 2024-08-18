@@ -24,7 +24,7 @@ export default function Contact() {
                 University of Dhaka
               </p>
             </div>
-            <div className="lg:w-3/4 px-6 mt-4 lg:mt-0 text-white">
+            <div className="lg:w-3/4 px-6 mt-4 text-white">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>

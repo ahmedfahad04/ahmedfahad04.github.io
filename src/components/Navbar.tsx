@@ -33,6 +33,14 @@ export default function Navbar() {
 						Skills
 					</Link>
 					<Link
+						to='experience'
+						smooth={true}
+						duration={500}
+						className='px-2 hover:text-secondary cursor-pointer transition-all ease-linear duration-100 hover:scale-105'
+					>
+						Experience
+					</Link>
+					<Link
 						to='contact'
 						smooth={true}
 						duration={500}
