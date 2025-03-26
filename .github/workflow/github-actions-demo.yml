@@ -3,28 +3,32 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # or master, depending on your default branch
+      - master # Changed to 'main' (GitHub's modern default branch; update if yours is 'master')
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # Added caching for faster installs
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci # Changed to 'npm ci' for cleaner installs in CI environments
 
       - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4 # Updated to latest version
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist # Ensure this matches your build output directory
+          publish_branch: gh-pages # Explicitly set to deploy to gh-pages branch
+          force_orphan: true # Optional: Keeps gh-pages branch clean
