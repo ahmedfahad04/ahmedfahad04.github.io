@@ -23,7 +23,7 @@ jobs:
         run: npm ci # Ensures clean install using package-lock.json
 
       - name: Build
-        run: npm run build # Modify if your build command differs
+        run: npm run predeploy # Modify if your build command differs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
