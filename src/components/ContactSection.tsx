@@ -6,30 +6,42 @@ const contactMethods = [
 		title: 'Email',
 		value: 'ahmedfahad3596@gmail.com',
 		link: 'mailto:ahmedfahad3596@gmail.com',
+		color: 'yellow',
 	},
 	{
 		icon: 'fa-linkedin',
 		title: 'LinkedIn',
 		value: 'ahmedfahad04',
 		link: 'https://linkedin.com/in/ahmedfahad04',
+		color: 'blue',
 	},
 	{
 		icon: 'fa-twitter',
 		title: 'X (Twitter)',
 		value: '@ahmedfahad1204', // Update if different
 		link: 'https://twitter.com/ahmedfahad1204',
+		color: 'sky',
 	},
 	{
 		icon: 'fa-kaggle',
 		title: 'Kaggle',
 		value: 'istiaqahmedfahad',
 		link: 'https://kaggle.com/istiaqahmedfahad',
+		color: 'sky',
 	},
 	{
 		icon: 'fa-medium',
 		title: 'Medium',
 		value: '@ahmedfahad04', // Update if different
 		link: 'https://medium.com/@ahmedfahad04',
+		color: 'gray',
+	},
+	{
+		icon: 'fa-github',
+		title: 'GitHub',
+		value: 'ahmedfahad04',
+		link: 'https://github.com/ahmedfahad04',
+		color: 'gray',
 	},
 ];
 
@@ -56,7 +68,7 @@ const ConnectSection = () => {
 									<i
 										className={`${
 											method.icon === 'fa-envelope' ? 'fa-solid' : 'fa-brands'
-										} ${method.icon} text-blue-700 text-lg`}
+										} ${method.icon} text-black-500 text-lg`}
 									></i>
 									<span className='absolute inset-x-0 bottom-[-4px] h-1 bg-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full'></span>
 								</div>
