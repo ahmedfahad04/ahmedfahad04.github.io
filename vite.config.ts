@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/ahmedfahad04.github.io/'
+  // base: '/ahmedfahad04.github.io/'
 }));
