@@ -57,6 +57,8 @@ The site is deployed using GitHub Pages. To deploy:
 npm run deploy
 ```
 
+> **_NOTE:_** After making any changes, run the above command to reflect the change in production.
+
 ## 👤 Author
 
 Istiaq Ahmed Fahad
