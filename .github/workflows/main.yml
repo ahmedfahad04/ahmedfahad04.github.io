@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure a full history checkout
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,12 +30,13 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build Project
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3 # Updated to v3 which is more stable
+        if: success() # Deploy only if the build is successful
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true # Keeps gh-pages branch clean with only latest deployment
+          force_orphan: true # Keeps gh-pages branch clean with only the latest deployment
