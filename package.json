@@ -1,7 +1,7 @@
 {
-	"name": "vite_react_shadcn_ts",
+	"name": "fahads-portfolio",
 	"private": true,
-	"version": "4.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"homepage": "https://ahmedfahad04.github.io",
 	"scripts": {

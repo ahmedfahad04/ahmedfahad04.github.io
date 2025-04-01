@@ -22,7 +22,7 @@ const skillCategories = [
 			'NestJS',
 			'FastAPI',
 			'TypeORM',
-		], // Combined Tools & Frameworks with ML frameworks
+		], // Combined Tools & Frameworks with AI frameworks
 	},
 	{
 		id: 3,
@@ -58,7 +58,7 @@ const skillCategories = [
 	},
 	{
 		id: 5,
-		name: 'AI-ML Frameworks/Tools',
+		name: 'AI-AI Frameworks/Tools',
 		icon: <Brain className='h-6 w-6 text-blue-700' />,
 		skills: ['PyTorch', 'Scikit-learn', 'Hugging Face Transformers'],
 	},

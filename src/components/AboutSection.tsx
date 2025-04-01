@@ -27,11 +27,14 @@ const AboutSection = () => {
 								developer.
 							</p>
 							<p className='text-gray-700 leading-relaxed'>
-								Currently, I'm preparing for my Master's degree, where I plan to
-								further specialize in these fields. Beyond my formal education,
-								I've gained valuable experience as a Research Assistant Intern
-								at Data & Design Lab, and I've achieved top ranks in Kaggle
-								competitions and received awards at innovation fairs.
+								<b>
+									Currently, I'm preparing for my Master's degree, where I plan
+									to further specialize in these fields.
+								</b>
+								Beyond my formal education, I've gained valuable experience as a
+								Research Assistant Intern at Data & Design Lab, and I've
+								achieved top ranks in Kaggle competitions and received awards at
+								innovation fairs.
 							</p>
 						</div>
 					</div>
