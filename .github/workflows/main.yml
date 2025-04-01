@@ -34,9 +34,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        if: success() # Deploy only if the build is successful
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true # Keeps gh-pages branch clean with only the latest deployment
+          force_orphan: true
+          commit_message: '🚀 Deploy latest changes'
