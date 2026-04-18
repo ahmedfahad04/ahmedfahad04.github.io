@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Istiaq Ahmed Fahad - Curriculum Vitae",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -411,31 +411,51 @@ ninja.data = [{
           section: "News",},{id: "news-tada-accepted-for-publication-in-information-and-software-technology-journal-q1-can-we-trust-the-source-a-systematic-review-of-watermarking-and-attribution-for-ai-generated-code",
           title: ':tada: Accepted for Publication in Information and Software Technology Journal (Q1): “Can We...',
           description: "",
-          section: "News",},{id: "projects-pytypewizard",
+          section: "News",},{id: "projects-agrotrade",
+          title: 'AgroTrade',
+          description: "Agricultural B2B Marketplace",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_agrotrade/";
+            },},{id: "projects-beautified-you",
+          title: 'Beautified You',
+          description: "Full-Stack E-commerce Application",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_beautified_you/";
+            },},{id: "projects-pytypewizard",
           title: 'PyTypeWizard',
           description: "Automated Repair for Python Static Type Errors",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/3_pytypewizard/";
             },},{id: "projects-empower",
           title: 'EmPower',
           description: "Interactive Learning Tool for Autistic Children",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects/4_empower/";
             },},{id: "projects-autonomous-vehicle-detection-for-bangladesh-roads",
           title: 'Autonomous Vehicle Detection for Bangladesh Roads',
           description: "YOLO and DETR-based object detection for road safety",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/5_vehicle_detection/";
             },},{id: "projects-bengali-automatic-speech-recognition-for-regional-dialects",
           title: 'Bengali Automatic Speech Recognition for Regional Dialects',
           description: "Deep learning-based ASR system for Bengali speech",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/projects/6_bengali_asr/";
             },},{id: "projects-mathematical-reasoning-for-low-resource-language-bengali",
           title: 'Mathematical Reasoning for Low-Resource Language (Bengali)',
           description: "Fine-tuned LLM for Bengali mathematical reasoning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/projects/7_math_reasoning/";
+            },},{id: "projects-symplink",
+          title: 'SympLink',
+          description: "AI-based Symptom-to-Disease Mapping",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_symplink/";
+            },},{id: "projects-smartgeoref",
+          title: 'SmartGeoRef',
+          description: "Automated Geo-referencing Tool for Scanned Map Images",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_smartgeoref/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
