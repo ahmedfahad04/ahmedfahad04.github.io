@@ -1,14 +1,39 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: EmPower - Interactive Learning Tool for Autistic Children
+description: Desktop application supporting cognitive, behavioral, and social development
+img: assets/img/2.jpg
 importance: 2
 category: work
-giscus_comments: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
+## Overview
+
+EmPower is an innovative interactive learning application designed specifically for autistic children. The tool provides a comprehensive platform for cognitive stimulation, behavioral support, and social skill development through engaging interfaces and personalized learning pathways.
+
+## Awards & Recognition
+
+🥈 **2nd Place - Dhaka University Innovation Fair 2024** (Best Innovation Idea Award Category)
+
+## Key Features
+
+- **Task Scheduling**: Structured daily learning activities with customizable difficulty levels
+- **Gaze-based Interaction**: Eye-tracking support for non-traditional input methods
+- **Progress Monitoring**: Real-time tracking of learning milestones and behavioral improvements
+- **Personalized Learning Paths**: Adaptive content based on individual progress and preferences
+- **Engagement Gamification**: Reward systems and milestone celebrations
+
+## Technical Stack
+
+- **Python** - Core application logic
+- **PyQt5** - Cross-platform desktop GUI
+- **SQLite** - Student progress and activity data storage
+- **Computer Vision** - Eye-tracking and gaze detection
+
+## Social Impact
+
+EmPower addresses a critical gap in educational technology for children with autism spectrum disorder (ASD). The tool provides safe, structured learning environments and enables therapists and educators to track progress effectively.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 

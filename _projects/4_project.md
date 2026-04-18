@@ -1,13 +1,55 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Bengali Automatic Speech Recognition for Regional Dialects
+description: Deep learning-based ASR system for Bengali speech with regional dialect support
+img: assets/img/4.jpg
+importance: 4
+category: work
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
+## Overview
+
+This project develops an end-to-end automatic speech recognition (ASR) system specifically trained for Bengali language with support for regional dialects across Bangladesh.
+
+## Awards & Recognition
+
+🥉 **4th Place - IUT CSE Fest Datathon 2024** (out of 47 teams)
+
+## Dataset
+
+- **Scale**: 79+ hours of curated Bengali speech corpus
+- **Coverage**: Multiple regional dialects across Bangladesh
+- **Quality**: High-quality audio recordings with precise transcriptions
+- **Diversity**: Speakers from different age groups, genders, and educational backgrounds
+
+## Model Architecture
+
+- **End-to-End Architecture**: Integrated acoustic and language modeling
+- **Deep Learning Framework**: TensorFlow/PyTorch for training
+- **Sequence-to-Sequence**: Encoder-decoder architecture with attention mechanism
+- **Language-specific Features**: Phonetic and linguistic features tailored for Bengali
+
+## Performance
+
+- **Accuracy**: 75% on regional dialect test set
+- **Word Error Rate (WER)**: Low WER on specific dialect categories
+- **Robustness**: Handles background noise and varying audio quality
+
+## Technical Stack
+
+- **Python** - Development
+- **TensorFlow/PyTorch** - Deep learning
+- **Librosa** - Audio processing
+- **Kaldi** - Speech recognition toolkit
+- **MFCC & Spectrogram** - Feature extraction
+
+## Applications
+
+- **Voice-enabled Services**: Bengali-language voice search and commands
+- **Accessibility**: Voice input for Bengali speakers
+- **Content Creation**: Automatic transcription of Bengali media
+- **Education**: Language learning applications
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 

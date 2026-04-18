@@ -1,23 +1,44 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: PyTypeWizard - Automated Repair for Python Static Type Errors
+description: VSCode Extension for real-time detection and repair of Python type errors using LLM-based reasoning
+img: assets/img/1.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+PyTypeWizard is a VSCode extension that leverages large language models to automatically detect and repair Python static type errors in real-time. This tool bridges the gap between Python's dynamic typing and modern type checking practices.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
+## Key Features
+
+- **Real-time Detection**: Identifies Python static type errors as you code
+- **LLM-powered Fixes**: Uses context-aware reasoning with Retrieval-Augmented Generation (RAG) to suggest semantically correct fixes
+- **Code Indexing**: Maintains a SQLite database of code chunks, error metadata, and historical fixes for continuous learning
+- **Feedback Loop**: Incorporates user feedback to improve fix quality over time
+
+## Technical Stack
+
+- **VSCode Extension API** - Core extension development
+- **LLM Integration** - Claude/GPT for reasoning and fix generation
+- **RAG (Retrieval-Augmented Generation)** - Context-aware code understanding
+- **SQLite** - Persistent storage for learning database
+- **Vector Embeddings** - Semantic code similarity for relevant context retrieval
+
+## Implementation Details
+
+The extension works by:
+1. Analyzing Python code for type errors using static analysis
+2. Retrieving semantically similar code patterns from the indexed codebase
+3. Using RAG to generate context-aware fixes
+4. Storing fixes and user feedback in SQLite for model refinement
+
+## Impact
+
+This project demonstrates the potential of AI-assisted software engineering in improving code quality and reducing debugging time for Python developers, particularly beneficial for teams transitioning to typed Python.
+
     img: /assets/img/12.jpg
     ---
 

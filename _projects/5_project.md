@@ -1,13 +1,59 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Mathematical Reasoning for Low-Resource Language (Bengali)
+description: Fine-tuned LLM for Bengali mathematical problem-solving
+img: assets/img/5.jpg
+importance: 5
+category: work
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
+## Overview
+
+This project enhances Qwen-7B language model for Bengali-language mathematical reasoning through careful fine-tuning with curated datasets and advanced optimization techniques.
+
+## Awards & Recognition
+
+🥉 **6th Place - BUET DL Sprint 3.0 2025** (out of 70+ teams)
+
+## Technical Approach
+
+### Model Fine-tuning
+
+- **Base Model**: Qwen-7B (open-source LLM)
+- **Dataset**: Curated Bengali mathematical problem corpus
+- **Optimization**: Direct Preference Optimization (DPO)
+- **Model Merging**: mergeKit for efficient multi-adapter composition
+
+### Direct Preference Optimization (DPO)
+
+- **Method**: Aligning model outputs with human preferences without explicit reward modeling
+- **Advantage**: More efficient than RLHF for mathematical reasoning
+- **Results**: Improved mathematical problem-solving accuracy
+
+## Performance Metrics
+
+- **Mathematical Accuracy**: Significant improvement over baseline Qwen-7B
+- **Language Proficiency**: Native Bengali language understanding
+- **Reasoning Capability**: Multi-step problem-solving support
+- **Inference Speed**: Efficient on consumer hardware
+
+## Technical Stack
+
+- **Python** - Development
+- **Hugging Face Transformers** - Model loading and fine-tuning
+- **PyTorch** - Training framework
+- **PEFT (Parameter-Efficient Fine-Tuning)** - LoRA adapters
+- **mergeKit** - Multi-adapter merging
+- **Qwen Models** - Base model architecture
+
+## Applications
+
+- **Educational Technology**: Bengali math tutoring systems
+- **Homework Assistance**: Step-by-step mathematical problem solving
+- **STEM Education**: Improving accessibility of STEM content in Bengali
+- **Professional Tools**: Technical documentation in Bengali
+- **Research**: Low-resource language AI capabilities
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 

@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: BSc in Software Engineering | Researcher | AI-Native Software Engineer
+subtitle: MSc Software Engineering | AI Research & Trustworthy Systems
 
 profile:
   align: right
@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 2 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -27,8 +27,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Master's student in Software Engineering at the [Institute of Information Technology (IIT)](https://iit.du.ac.bd/), University of Dhaka, focused on **trustworthy AI systems and code watermarking for AI-generated software**. My research directly addresses critical challenges in the responsible deployment of large language models, particularly ensuring that AI-generated code can be reliably traced, attributed, and verified.
+I am a Master's student in Software Engineering at [IIT, University of Dhaka](https://iit.du.ac.bd/), where I focus on **trustworthy AI systems and source code watermarking** for AI-generated software. My current research contributions span the [DSSE Research Group](https://dsse.iit.du.ac.bd), [BIDS](https://bids.org.bd/), and [Data & Design Lab](https://www.dndlab.org/), covering robust code attribution, geospatial AI workflows, and interactive research dashboards. Alongside research, I bring practical software engineering experience from industry environments, which helps me connect academic methods with real-world deployment needs. I am committed to building transparent, interpretable, and reliable AI systems aligned with human values.
 
-Currently, I work as a Research Assistant at the [Distributed Systems & Software Engineering (DSSE) Research Group](https://dsse.iit.du.ac.bd) under Dr. Kazi Muheymin-Us-Sakib, developing **prompt-guided frameworks for source code watermarking** with improved robustness and detection performance. Simultaneously, I contribute to the [Bangladesh Institute of Development Studies (BIDS)](https://bids.org.bd/) on **geospatial AI and NLP automation**, and previously designed **interactive analytical dashboards** at the [Data & Design Lab](https://www.dndlab.org/) for energy policy research. Beyond research, I bring practical engineering expertise from roles as a Course Instructor (Python, MS Office), Trainee Software Engineer (payroll systems, Kafka integration), and Software Engineer Intern (frontend development, TailwindCSS).
-
-My philosophy is simple: AI systems must be transparent, interpretable, and aligned with human values. Whether advancing code watermarking, human-computer interaction, behavioral AI, or low-resource NLP for Bengali, I am committed to building AI that is both powerful and trustworthy.
