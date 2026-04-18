@@ -13,5 +13,3 @@ tech_stack: [Python, PyQt5, SQLite]
 Developed an interactive desktop learning application tailored for autistic children to support cognitive, behavioral, and social development.
 
 Implemented features including task scheduling, gaze-based interaction, and progress monitoring.
-
-**Recognition:** Secured 2nd Place at the Dhaka University Innovation Fair 2024 (Best Innovation Idea Award Category).

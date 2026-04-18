@@ -13,5 +13,3 @@ tech_stack: [Python, Hugging Face, LLM Fine-Tuning]
 Enhanced Qwen-7B for Bangla reasoning by fine-tuning with curated math datasets.
 
 Applied Direct Preference Optimization (DPO) and used mergeKit to improve inference quality for Bangla math problems.
-
-**Recognition:** Secured 6th Place in the BUET DL Sprint 3.0, a Deep Learning competition.

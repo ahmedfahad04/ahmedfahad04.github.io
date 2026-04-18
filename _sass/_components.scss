@@ -169,6 +169,13 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color-light);
   }
 
+  .project-recognition {
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+  }
+
   .project-tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +199,30 @@ ul.task-list input[type="checkbox"] {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
+  }
+
+  .project-full-content {
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+
+    p {
+      margin-bottom: 0.7rem;
+      color: var(--global-text-color);
+    }
+
+    ul {
+      margin-bottom: 0.7rem;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+      color: var(--global-text-color-light);
+    }
+
+    strong {
+      color: var(--global-text-color);
+    }
   }
 
   .project-link {

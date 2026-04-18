@@ -13,5 +13,3 @@ tech_stack: [Python, YOLO, DETR, Deep Learning, Kaggle]
 Developed a solution using YOLO, DETR, and Deep Learning models for object detection in the BadODD dataset.
 
 Utilized different road objects from nine districts of Bangladesh to cover a wide variety of objects, ensuring 43% accuracy in vehicle detection.
-
-**Recognition:** Secured 3rd Place in SUST DL Enigma 2024 - a Deep Learning competition.

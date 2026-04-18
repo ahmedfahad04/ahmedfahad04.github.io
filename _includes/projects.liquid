@@ -7,6 +7,10 @@
 
       <p class="card-text project-description">{{ project.description }}</p>
 
+      {% if project.award %}
+        <p class="project-recognition">🎉 {{ project.award }}</p>
+      {% endif %}
+
       {% if project.tech_stack %}
         <div class="project-tech-stack" aria-label="Tech stack">
           {% for tech in project.tech_stack %}
@@ -15,9 +19,11 @@
         </div>
       {% endif %}
 
-      <div class="project-links mt-auto">
-        <a class="project-link" href="{{ project.url | relative_url }}">Details</a>
+      <div class="project-full-content">
+        {{ project.content | markdownify }}
+      </div>
 
+      <div class="project-links mt-auto">
         {% if project.website %}
           <a class="project-link" href="{{ project.website }}" target="_blank" rel="external nofollow noopener">Website</a>
         {% endif %}
