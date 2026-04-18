@@ -22,7 +22,7 @@ nav_order: 4
 					<div class="periodical">Automated geo-referencing and NLP-based analysis workflows across multiple projects, developed SmartGeoRef for improved GeoJSON extraction, and processed 84+ maps in a single day to significantly reduce manual effort.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Apr 2026 - Present</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Apr'26 - Present</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Hybrid</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@ nav_order: 4
 					<div class="periodical">Conducting Master's thesis on source code watermarking and attribution for AI-generated code, with a prompt-guided iterative feedback framework to improve robustness and detection reliability.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Apr 2025 - Present</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Apr'25 - Present</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">On-site</div>
 				</div>
 			</div>
@@ -58,7 +58,7 @@ nav_order: 4
 					<div class="periodical">Designed interactive analytical dashboards for energy policy research, conducted stakeholder-driven requirement analysis, and supported usability evaluation and publication-oriented research workflows.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Jul 2025 - Apr 2026</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Jul'25 - Apr'26</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Hybrid</div>
 				</div>
 			</div>
@@ -76,7 +76,7 @@ nav_order: 4
 					<div class="periodical">Reviewed literature on code translation, readability, and software bugs; improved evaluation pipelines; and proposed readability-focused analysis for C and Rust codebases.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">May 2024 - Aug 2024</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">May'24 - Aug'24</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Remote</div>
 				</div>
 			</div>
@@ -96,7 +96,7 @@ nav_order: 4
 					<div class="periodical">Taught Python and MS Office to 40+ participants with practical workflow focus, and mentored a PhD student in analytical and reporting tasks.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Sep 2025 - Dec 2025</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Sep'25 - Dec'25</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">On-site</div>
 				</div>
 			</div>
@@ -113,7 +113,7 @@ nav_order: 4
 					<div class="periodical">Contributed to enterprise payroll modules (Salary Review, Tax Certificate, Leave Management), implemented Kafka-based communication for external integrations, and worked in Agile SCRUM delivery cycles.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Jan 2024 - Feb 2025</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Jan'24 - Feb'25</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">On-site</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@ nav_order: 4
 					<div class="periodical">Developed the Vivasoft Contact Management application with TailwindCSS and delivered scalable, user-centric frontend solutions with cross-functional collaboration.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">Sep 2023 - Feb 2024</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">Sep'23 - Feb'24</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Remote</div>
 				</div>
 			</div>
@@ -147,7 +147,7 @@ nav_order: 4
 					<div class="periodical">Performed requirements analysis and system modeling, designed end-to-end academic and administrative workflows, and analyzed digital payment integrations with reporting mechanisms.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">May 2023 - Sep 2023</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">May'23 - Sep'23</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Remote</div>
 				</div>
 			</div>
@@ -164,7 +164,7 @@ nav_order: 4
 					<div class="periodical">Designed and developed the <strong>Automatic Biofloc System</strong> desktop GUI using <strong>PyQt5</strong>, improving user interaction efficiency. Researched and proposed <strong>innovative cross-platform solutions</strong> for application development.</div>
 				</div>
 				<div class="col-sm-2 text-end">
-					<div class="author" style="text-align: right; font-size: 0.9em;">July 2021 - June 2022</div>
+					<div class="author" style="text-align: right; font-size: 0.9em;">July'21 - June'22</div>
 					<div class="author" style="text-align: right; font-size: 0.9em;">Remote</div>
 				</div>
 			</div>

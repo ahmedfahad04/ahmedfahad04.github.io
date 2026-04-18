@@ -1,64 +1,22 @@
 ---
 layout: page
-title: PyTypeWizard - Automated Repair for Python Static Type Errors
-description: VSCode Extension for real-time detection and repair of Python type errors using LLM-based reasoning
+title: PyTypeWizard
+description: Automated Repair for Python Static Type Errors
 img: assets/img/1.jpg
 importance: 1
 category: work
-related_publications: false
+tech_stack: [VSCode Extension API, SQLite, RAG, LLM]
 ---
 
-## Overview
-
-PyTypeWizard is a VSCode extension that leverages large language models to automatically detect and repair Python static type errors in real-time. This tool bridges the gap between Python's dynamic typing and modern type checking practices.
-
-## Key Features
-
-- **Real-time Detection**: Identifies Python static type errors as you code
-- **LLM-powered Fixes**: Uses context-aware reasoning with Retrieval-Augmented Generation (RAG) to suggest semantically correct fixes
-- **Code Indexing**: Maintains a SQLite database of code chunks, error metadata, and historical fixes for continuous learning
-- **Feedback Loop**: Incorporates user feedback to improve fix quality over time
-
-## Technical Stack
-
-- **VSCode Extension API** - Core extension development
-- **LLM Integration** - Claude/GPT for reasoning and fix generation
-- **RAG (Retrieval-Augmented Generation)** - Context-aware code understanding
-- **SQLite** - Persistent storage for learning database
-- **Vector Embeddings** - Semantic code similarity for relevant context retrieval
-
-## Implementation Details
-
-The extension works by:
-1. Analyzing Python code for type errors using static analysis
-2. Retrieving semantically similar code patterns from the indexed codebase
-3. Using RAG to generate context-aware fixes
-4. Storing fixes and user feedback in SQLite for model refinement
-
-## Impact
-
-This project demonstrates the potential of AI-assisted software engineering in improving code quality and reducing debugging time for Python developers, particularly beneficial for teams transitioning to typed Python.
-
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="project-card">
+  <h3>PyTypeWizard: Automated Repair for Python Static Type Errors</h3>
+  
+  **Tech Stack:** VSCode Extension API • SQLite • RAG • LLM
+  
+  Built a VSCode extension for real-time detection and repair of Python static type errors using LLM-based reasoning. Implemented context-aware fix generation using Retrieval-Augmented Generation (RAG) over indexed codebases with vector embeddings. Designed a relational database schema (SQLite) to store code chunks, error metadata, fixes, and user feedback for continuous improvement.
+  
+  **GitHub:** [View Project](https://github.com/ahmedfahad04/PyTypeWizard)
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

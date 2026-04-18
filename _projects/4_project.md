@@ -1,36 +1,24 @@
 ---
 layout: page
 title: Bengali Automatic Speech Recognition for Regional Dialects
-description: Deep learning-based ASR system for Bengali speech with regional dialect support
+description: Deep learning-based ASR system for Bengali speech
 img: assets/img/4.jpg
 importance: 4
 category: work
-related_publications: false
+tech_stack: [Python, Deep Learning, ASR]
 ---
 
-## Overview
-
-This project develops an end-to-end automatic speech recognition (ASR) system specifically trained for Bengali language with support for regional dialects across Bangladesh.
-
-## Awards & Recognition
-
-🥉 **4th Place - IUT CSE Fest Datathon 2024** (out of 47 teams)
-
-## Dataset
-
-- **Scale**: 79+ hours of curated Bengali speech corpus
-- **Coverage**: Multiple regional dialects across Bangladesh
-- **Quality**: High-quality audio recordings with precise transcriptions
-- **Diversity**: Speakers from different age groups, genders, and educational backgrounds
-
-## Model Architecture
-
-- **End-to-End Architecture**: Integrated acoustic and language modeling
-- **Deep Learning Framework**: TensorFlow/PyTorch for training
-- **Sequence-to-Sequence**: Encoder-decoder architecture with attention mechanism
-- **Language-specific Features**: Phonetic and linguistic features tailored for Bengali
-
-## Performance
+<div class="project-card">
+  <h3>Bengali Automatic Speech Recognition (ASR) for Regional Dialects</h3>
+  
+  **Tech Stack:** Python • Deep Learning • ASR
+  
+  Processed a 79+ hour Bengali speech corpus to improve transcription accuracy for Bengali dialects. Designed an end-to-end speech recognition pipeline using deep learning models that achieved 75% accuracy for speeches in specific dialects.
+  
+  **Award:** 🥉 4th Place - IUT CSE Fest Datathon 2024
+  
+  **Kaggle:** [View Competition](https://www.kaggle.com/competitions/ben10/code?competitionId=73047)
+</div>
 
 - **Accuracy**: 75% on regional dialect test set
 - **Word Error Rate (WER)**: Low WER on specific dialect categories

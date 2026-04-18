@@ -1,37 +1,24 @@
 ---
 layout: page
 title: Mathematical Reasoning for Low-Resource Language (Bengali)
-description: Fine-tuned LLM for Bengali mathematical problem-solving
+description: Fine-tuned LLM for Bengali mathematical reasoning
 img: assets/img/5.jpg
 importance: 5
 category: work
-related_publications: false
+tech_stack: [Python, Hugging Face, LLM Fine-Tuning]
 ---
 
-## Overview
-
-This project enhances Qwen-7B language model for Bengali-language mathematical reasoning through careful fine-tuning with curated datasets and advanced optimization techniques.
-
-## Awards & Recognition
-
-🥉 **6th Place - BUET DL Sprint 3.0 2025** (out of 70+ teams)
-
-## Technical Approach
-
-### Model Fine-tuning
-
-- **Base Model**: Qwen-7B (open-source LLM)
-- **Dataset**: Curated Bengali mathematical problem corpus
-- **Optimization**: Direct Preference Optimization (DPO)
-- **Model Merging**: mergeKit for efficient multi-adapter composition
-
-### Direct Preference Optimization (DPO)
-
-- **Method**: Aligning model outputs with human preferences without explicit reward modeling
-- **Advantage**: More efficient than RLHF for mathematical reasoning
-- **Results**: Improved mathematical problem-solving accuracy
-
-## Performance Metrics
+<div class="project-card">
+  <h3>Mathematical Reasoning for Low-Resource Language (Bengali)</h3>
+  
+  **Tech Stack:** Python • Hugging Face • LLM Fine-Tuning
+  
+  Enhanced Qwen-7B for Bangla reasoning by fine-tuning with curated math datasets. Applied Direct Preference Optimization (DPO) and used mergeKit to improve inference quality for Bangla math problems.
+  
+  **Award:** 🥉 6th Place - BUET DL Sprint 3.0 2025
+  
+  **Kaggle:** [View Competition](https://www.kaggle.com/competitions/dlsprint3/discussion/545581)
+</div>
 
 - **Mathematical Accuracy**: Significant improvement over baseline Qwen-7B
 - **Language Proficiency**: Native Bengali language understanding

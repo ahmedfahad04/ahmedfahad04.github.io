@@ -1,62 +1,24 @@
 ---
 layout: page
 title: Autonomous Vehicle Detection for Bangladesh Roads
-description: YOLO and DETR-based object detection for road safety in Bangladesh
+description: YOLO and DETR-based object detection for road safety
 img: assets/img/3.jpg
 importance: 3
 category: work
-related_publications: false
+tech_stack: [Python, YOLO, DETR, Deep Learning, Kaggle]
 ---
 
-## Overview
-
-This project develops robust vehicle detection models specifically trained on the BadODD (Bangladesh Object Detection Dataset) to improve road safety and autonomous navigation capabilities in Bangladesh's challenging road conditions.
-
-## Awards & Recognition
-
-🥉 **3rd Place - SUST DL Enigma 2024** (out of 80+ teams)
-
-## Dataset & Coverage
-
-- **Dataset**: BadODD (Bangladesh Object Detection Dataset)
-- **Geographic Coverage**: Nine districts across Bangladesh
-- **Diversity**: Multiple road types, weather conditions, and vehicle classes
-
-## Models & Approach
-
-### YOLO (You Only Look Once)
-- Real-time detection with optimized speed/accuracy trade-off
-- Excellent for real-world deployment with limited compute
-
-### DETR (Detection Transformer)
-- Transformer-based architecture for precise object localization
-- Superior performance on small objects and cluttered scenes
-
-### Performance Metrics
-- **Accuracy**: 43% mAP on BadODD test set
-- **Speed**: Real-time inference (20+ FPS on CPU)
-- **Robustness**: Tested across diverse weather and lighting conditions
-
-## Applications
-
-- **Autonomous Vehicle Systems**: Safe navigation on Bangladesh roads
-- **Traffic Monitoring**: Real-time vehicle counting and classification
-- **Road Safety Analysis**: Identifying high-risk driving scenarios
-
-## Technical Stack
-
-- **Python** - Development
-- **PyTorch** - Deep learning framework
-- **YOLO v5/v8** - Real-time detection
-- **DETR** - Transformer-based detection
-- **OpenCV** - Image processing
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
+<div class="project-card">
+  <h3>Autonomous Vehicle Detection for Bangladesh Roads</h3>
+  
+  **Tech Stack:** Python • YOLO • DETR • Deep Learning • Kaggle
+  
+  Developed a solution using YOLO, DETR, and Deep Learning models for object detection in the BadODD dataset. Utilized different road objects from nine districts of Bangladesh to cover a wide variety of objects, ensuring 43% accuracy in vehicle detection.
+  
+  **Award:** 🥉 3rd Place - SUST DL Enigma 2024
+  
+  **Kaggle:** [View Competition](https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024/discussion/477648)
+</div>
     title: project
     description: a project with a background image
     img: /assets/img/12.jpg
