@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-**IST Journal (Q1):** "Can We Trust the Source? A Systematic Review of Watermarking and Attribution for AI Generated Code" accepted for publication.
+:tada: Accepted for Publication in Information and Software Technology Journal (Q1): "Can We Trust the Source? A Systematic Review of Watermarking and Attribution for AI Generated Code".
 

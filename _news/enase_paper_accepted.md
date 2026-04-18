@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-**ENASE'26 (B-rank):** "PromptMark: A Prompt-Guided Iterative-Feedback Framework for Source Code Watermarking" accepted as full paper.
+:tada: Accepted for Publication in ENASE 2026: "PromptMark: A Prompt-Guided Iterative-Feedback Framework for Source Code Watermarking".
 

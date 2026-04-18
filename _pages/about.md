@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: MSc Software Engineering | AI Research & Trustworthy Systems
+subtitle: BSc in Software Engineering | Researcher | AI-Native Software Engineer
 
 profile:
   align: right
@@ -27,5 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Master's student in Software Engineering at [IIT, University of Dhaka](https://iit.du.ac.bd/), where I focus on **trustworthy AI systems and source code watermarking** for AI-generated software. My current research contributions span the [DSSE Research Group](https://dsse.iit.du.ac.bd), [BIDS](https://bids.org.bd/), and [Data & Design Lab](https://www.dndlab.org/), covering robust code attribution, geospatial AI workflows, and interactive research dashboards. Alongside research, I bring practical software engineering experience from industry environments, which helps me connect academic methods with real-world deployment needs. I am committed to building transparent, interpretable, and reliable AI systems aligned with human values.
+I am a Master's student in Software Engineering at [IIT, University of Dhaka](https://iit.du.ac.bd/), focused on **trustworthy AI systems and source code watermarking** for AI-generated software. My research is centered first on the [DSSE Research Group](https://dsse.iit.du.ac.bd), where I work on robust code attribution and watermarking, and the [Data and Design Lab (DnD Lab)](https://www.dndlab.org/), where I contributed to interactive, stakeholder-driven analytics for policy research. I also contribute to [BIDS](https://bids.org.bd/) on geospatial AI and automation workflows.
+
+On the professional side, I have hands-on engineering experience from **Cefalo Bangladesh Limited**, where I worked on enterprise payroll systems and Kafka-based integrations in Agile delivery environments. I also served as a short course instructor at IIT, teaching Python and MS Office to professionals and mentoring practical analytical work. This combined research and industry background helps me deliver AI systems that are both rigorous and deployment-ready.
 
