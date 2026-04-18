@@ -1,0 +1,483 @@
+%-------------------------
+% CV in LaTeX
+% Author: Udoy Saha (https://www.linkedin.com/in/udoysaha103/)
+%------------------------
+
+%  ------ DOCUMENT SETUP -------- SKIP FROM HERE ------ GO TO LINE 91 ----------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{enumitem}
+
+
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+% FONT CHANGE >>>
+\renewcommand{\rmdefault}{ptm}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting >>>
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large\bfseries\color{ACCENT_COLOR}
+}{}{0em}{}[\color{ACCENT_COLOR}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+% Custom commands
+\newcommand{\customItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\customSubHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\customProject}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\customSubHeadingContentStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\customSubHeadingContentEnd}{\end{itemize}}
+\newcommand{\customItemListStart}{\begin{itemize}}
+\newcommand{\customItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage[a4paper, margin=0.65in]{geometry}
+
+%  ------ DOCUMENT SETUP DONE -------- SKIP TILL HERE ------
+
+% Define your accent color
+\usepackage{xcolor}
+\definecolor{ACCENT_COLOR}{RGB}{0, 51, 102}  % <-- Provide the RGB values
+
+\begin{document}
+
+\begin{center}
+    {\Huge \color{ACCENT_COLOR} ISTIAQ AHMED FAHAD} \\ \vspace{8pt}
+    
+    \small 
+    \makebox[0.9\textwidth][c]{%
+        \href{tel:+8801766610087}{\faPhone\ \underline{+880 1766610087}} \quad  
+        \href{mailto:bsse1204@iit.du.ac.bd}{\faEnvelope\ \underline{ahmedfahad3596@gmail.com}} \quad
+        \href{https://ahmedfahad04.github.io/}{\faGlobe\ \underline{ahmedfahad04.github.io}} \quad
+        \href{https://www.linkedin.com/in/ahmedfahad04}{\faLinkedin\ \underline{linkedin.com/in/ahmedfahad04}} \quad
+       
+        
+    } \\ \vspace{4pt}
+    
+    \makebox[0.9\textwidth][c]{%
+        \href{https://scholar.google.com/citations?user=4nnVAk0AAAAJ&hl=en}{\faGraduationCap\ \underline{Istiaq Ahmed Fahad}} \quad
+        \href{https://github.com/ahmedfahad04}{\faGithub\ \underline{github.com/ahmedfahad04}} \quad 
+        \href{https://medium.com/@ahmedfahad04}{\faMedium\ \underline{medium.com/@ahmedfahad04}} 
+    }
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \customSubHeadingContentStart
+    \customSubHeading
+      {Institute of Information Technology, University of Dhaka}{Apr '25 – Sep '26}
+      {Master of Science in Software Engineering}{Dhaka, Bangladesh}
+
+    \customSubHeading
+      {Institute of Information Technology, University of Dhaka}{Jan '20 – Mar '25}
+      {Bachelor of Science in Software Engineering, CGPA: 3.94/4.00}{Dhaka, Bangladesh}
+  \customSubHeadingContentEnd
+\vspace{-8pt}
+
+
+% ----------RESEARCH INTERESTS-----------
+\section{RESEARCH INTERESTS}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Human-Computer Interaction (HCI)
+    \item Human-Centered AI
+    \item Behavioral and Cognitive Aspects of AI
+    \item Trustworthy and Responsible AI
+    \item LLM Safety \& Alignment
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt]
+    \item AI for Software Engineering (AI4SE)
+    \item Agentic AI for SE and Security
+    \item Program Analysis
+    \item Software Protection and Code Watermarking
+    \item Usable Systems and Interface Design
+    
+\end{itemize}
+\end{minipage}
+
+% ----------PUBLICATIONS-----------
+\section{PUBLICATIONS \& PREPRINTS}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=*, itemsep=2pt]
+
+    \item Istiaq Ahmed Fahad, and Mridha Md Nafis Fuad. 
+    \textbf{``Can We Trust the Source? A Systematic Review of Watermarking and Attribution for AI Generated Code,''} 
+    \textit{Information and Software Technology Journal}, accepted for publication, 2026. 
+    \href{https://dx.doi.org/10.2139/ssrn.6140216}{\ExternalLink}
+
+    \item Istiaq Ahmed Fahad, Mridha Md Nafis Fuad, and Kazi Sakib. 
+    \textbf{``PromptMark: A Prompt-Guided Iterative-Feedback Framework for Source Code Watermarking,''} 
+    in Proceedings of the 21st International Conference on \textit{Evaluation of Novel Approaches to Software Engineering (ENASE)}, accepted for publication, 2026.
+
+    \item Istiaq Ahmed Fahad, Kamruzzaman Asif, and Sifat Sikder. 
+    \textbf{``BanglaFake: Constructing and Evaluating a Specialized Bengali Deepfake Audio Dataset,''} 
+    \textit{arXiv preprint arXiv:2505.10885}, 2025. 
+    \href{https://arxiv.org/abs/2505.10885}{\ExternalLink}
+
+    \item Istiaq Ahmed Fahad, Abdullah Ibne Hanif Arean, Nazmus Sakib Ahmed, and Mahmudul Hasan. 
+    \textbf{``Automatic vehicle detection using DETR: A transformer-based approach for navigating treacherous roads,''} 
+    \textit{arXiv preprint arXiv:2502.17843}, 2025. 
+    \href{https://arxiv.org/abs/2502.17843}{\ExternalLink}
+
+\end{enumerate}
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{RESEARCH EXPERIENCE}
+\customSubHeadingContentStart
+
+    \customSubHeading
+    {Bangladesh Institute of Development Studies (BIDS) \href{https://bids.org.bd/}{\ExternalLink}}{Apr '26 – Present}
+    {Research Assistant (RA)}{Hybrid}
+    \customItemListStart
+        \customItem{Advisor: \textit{Dr. Atonu Rabbani, Economics, University of Dhaka.}}
+        \customItem{Automated geo-referencing and NLP-based analysis workflows across multiple research projects.}
+        \customItem{Developed \textbf{SmartGeoRef} to generate GeoJSON maps from static images with improved boundary precision.}
+        \customItem{Processed \textbf{84 maps in a single day}, significantly reducing manual effort and improving workflow efficiency.}
+    \customItemListEnd
+
+    
+    \customSubHeading
+    {Distributed Systems \& Software Engineering (DSSE) Research Group \href{https://dsse.iit.du.ac.bd}{\ExternalLink}}{Apr '25 – Present}
+    {Research Assistant (RA)}{On-site}
+    \customItemListStart
+        \customItem{Advisor: \textit{Dr. Kazi Muheymin-Us-Sakib, IIT, University of Dhaka.}}
+        \customItem{Conducting Master’s thesis on \textbf{source code watermarking and attribution for AI-generated code}, focusing on robustness and reliability of black-box watermarking techniques.}
+        \customItem{Designed and implemented a \textbf{prompt-guided iterative feedback framework} to improve watermark embedding and detection performance in LLM-generated code.}
+    \customItemListEnd
+
+
+    \customSubHeading
+    {Data \& Design Lab (DnD Lab) \href{https://www.dndlab.org/}{\ExternalLink}}{Jul '25 – Apr '26}
+    {Research Assistant (RA)}{Hybrid}
+    \customItemListStart
+        \customItem{Advisor: \textit{Dr. Moinul Islam Zaber \& Dr. Sarker Tanveer Ahmed Rumee, CSE, University of Dhaka.}}
+        \customItem{Designed and developed \textbf{interactive analytical dashboards} for energy systems supporting policy-level decision making.}
+        \customItem{Conducted \textbf{stakeholder-driven analysis}, requirement elicitation, and usability evaluation in real-world settings.}
+        \customItem{Supported \textbf{research documentation}, evaluation studies, and academic publications.}
+    \customItemListEnd
+
+    \customSubHeading
+    {UIUC+ Summer Research Program in Software Engineering (SRSE) \href{https://siebelschool.illinois.edu/research/undergraduate-research/srp}{\ExternalLink}}{May '24 -- Aug '24}
+    {Research Intern}{Remote}
+    \customItemListStart
+        \customItem{Advisor: \textit{Darko Marinov, University of Illinois at Urbana-Champaign}}
+        \customItem{Reviewed literature on \textbf{code translation}, \textbf{readability}, and \textbf{software bugs}, synthesizing research insights.}
+        \customItem{Improved \textbf{evaluation pipelines} and repository structure while maintaining high-quality contributions.}
+        \customItem{Proposed \textbf{code readability metrics} and analyzed \textbf{memory usage} between \textbf{C} and \textbf{Rust}.}
+    \customItemListEnd
+
+\customSubHeadingContentEnd
+\vspace{-10pt}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+\customSubHeadingContentStart
+
+    \customSubHeading
+    {IIT, University of Dhaka}{Sep '25 -- Dec '25}
+    {Course Instructor (Python, MS Office)}{On-site}
+    \customItemListStart
+        \customItem{Taught \textbf{Python} and \textbf{MS Office} to \textbf{40+ participants}, focusing on practical workflows.}
+        \customItem{Mentored a \textbf{PhD student} in analytical tasks and reporting using Python.}
+    \customItemListEnd
+
+    \customSubHeading
+    {Cefalo Bangladesh Limited}{Jan '24 – Feb '25}
+    {Trainee Software Engineer}{On-site}
+    \customItemListStart
+        \customItem{Contributed to payroll system modules including \textbf{Salary Review}, \textbf{Tax Certificate}, and \textbf{Leave Management}.}
+        \customItem{Implemented \textbf{Kafka-based communication} for efficient integration with external systems.}
+        \customItem{Collaborated in an \textbf{Agile SCRUM environment} to ensure timely delivery and team coordination.}
+    \customItemListEnd
+
+    \customSubHeading
+    {Vivasoft Limited}{Sep '23 – Feb '24}
+    {Software Engineer Intern}{Remote}
+    \customItemListStart
+        \customItem{Developed the \textbf{Vivasoft Contact Management} application with pixel-perfect UI using \textbf{TailwindCSS}.}
+        \customItem{Delivered \textbf{scalable, user-centric frontend solutions} in collaboration with cross-functional teams.}
+    \customItemListEnd
+
+    \customSubHeading
+    {Chittagong University ERP Project}{May '23 -- Sep '23}
+    {Assistant ERP System Analyst}{Remote}
+    \customItemListStart
+        \customItem{Performed \textbf{requirements analysis} and \textbf{system modeling} for a university-scale ERP system.}
+        \customItem{Designed \textbf{end-to-end workflows} for academic and administrative modules.}
+        \customItem{Analyzed \textbf{digital payment systems} integrating banking and gateway solutions with reporting mechanisms.}
+        \customItem{Ensured \textbf{data integrity}, \textbf{access control}, and \textbf{auditability} through stakeholder collaboration.}
+    \customItemListEnd
+
+\customSubHeadingContentEnd
+\vspace{-10pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{\uppercase{Awards \& Honors}}
+\begin{itemize}[noitemsep, left=0pt]
+    \item \textbf{Research Fellowship} – ICT Division, Government of Bangladesh, 2026: Selected for Master’s thesis proposal.
+    
+    \item \textbf{Talent Pool Scholarship} – University of Dhaka, 2026: Awarded for securing 2nd position in undergraduate studies.
+    
+    \item \textbf{Ranked 6th} – AI Engineering Hackathon by Poridhi.io, 2025 (out of \textbf{85 teams}): Developed an intent-based semantic search system using Qdrant and BERT.
+    
+    \item \textbf{Ranked 6th} – BUET DL Sprint 3.0, 2025 (out of \textbf{70+ teams}): Fine-tuned Qwen-7B and BanglaT5 for low-resource mathematical reasoning.
+    
+    \item \textbf{Ranked 4th} – IUT CSE Fest Datathon, 2024 (out of \textbf{47 teams}): Developed a Bengali ASR model trained on 79+ hours of speech data.
+    
+    \item \textbf{Ranked 2nd} – Dhaka University Innovation Fair, 2024: Developed \textit{EmPower}, an interactive learning tool for autistic children.
+    
+    \item \textbf{Ranked 3rd} – SUST DL Enigma, 2024 (out of \textbf{80+ teams}): Developed an object detection system for Bangladeshi roads using YOLO and DETR.
+    
+    \item \textbf{Top 2\%} – Learnathon 2.0, 2024 (out of \textbf{1800+ participants}): Completed a 6-month intensive program focused on JavaScript, React, and Next.js with paid project contributions.
+    
+    \item \textbf{Rising Star Award} - IIT Emerging Cup Coding Contest, 2020: Recognized for exceptional performance in an internal coding contest.
+
+\end{itemize}
+
+%-----------SKILLS-----------
+\section{SKILLS}
+\begin{itemize}[noitemsep, itemsep=4pt, left=0pt]
+
+    \item \textbf{Programming \& Databases:} Python, JavaScript, TypeScript, Java, C, C++, SQL, PostgreSQL, MongoDB
+    
+    \item \textbf{Frameworks \& Libraries:} React, Next.js, TailwindCSS, Node.js, NestJS, FastAPI, Pandas, NumPy, Matplotlib, Streamlit
+    
+    \item \textbf{AI/ML \& Data Science:} PyTorch, Keras, Scikit-learn, Hugging Face Transformers, Model Fine-tuning (PEFT/LoRA), Evaluation \& Benchmarking
+    
+    \item \textbf{LLM \& AI Systems:} Prompt Engineering, Retrieval-Augmented Generation (RAG), Vector Databases (FAISS, Qdrant), LLM Agents, Tool-augmented LLMs
+    
+    \item \textbf{AI-Native \& Developer Tools:} Claude Code, GitHub Copilot, Agentic Coding CLIs, VSCode AI Extensions
+    
+    \item \textbf{Systems \& DevOps:} Git, Docker, Linux, REST APIs, Postman, CI/CD, Minio, Nginx, Deployments, Containerization, Jenkins
+    
+    \item \textbf{Research \& Productivity:} Jupyter Notebook, LaTeX, Technical Writing, Experiment Design, Data Analysis, Requirement Analysis
+
+    \item \textbf{Soft Skills:} Leadership, Presentation, Teamwork, Analytical Thinking
+
+\end{itemize}
+\vspace{-13pt}
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \customSubHeadingContentStart
+
+      \customProject
+          {\textbf{\href{https://github.com/ahmedfahad04/PyTypeWizard}{\faLink\ PyTypeWizard: Automated Repair for Python Static Type Errors}} $|$ 
+          \emph{VSCode Extension API, SQLite, RAG, LLM}}
+          {}
+          \customItemListStart
+            \customItem{Built a \textbf{VSCode extension} for real-time detection and repair of Python static type errors using \textbf{LLM-based reasoning}.}
+            \customItem{Implemented \textbf{context-aware fix generation} using \textbf{Retrieval-Augmented Generation (RAG)} over indexed codebases with vector embeddings.}
+            \customItem{Designed a \textbf{relational database schema (SQLite)} to store code chunks, error metadata, fixes, and user feedback for continuous improvement.}
+          \customItemListEnd
+          \vspace{-13pt}
+
+    
+      \customProject
+          {\textbf{\href{https://github.com/ahmedfahad04/EmPower}{\faLink\ EmPower: Interactive Learning Tool for Autistic Children}} $|$ 
+          \emph{Python, PyQt5, SQLite}}
+          {}
+          \customItemListStart
+            \customItem{Developed an \textbf{interactive desktop learning application} tailored for autistic children to support cognitive, behavioral, and social development.}
+            \customItem{Implemented features including \textbf{task scheduling}, \textbf{gaze-based interaction}, and \textbf{progress monitoring}.}
+            \customItem{\textbf{Recognition:} Secured \textbf{2nd Place} at the \textbf{Dhaka University Innovation Fair 2024} (Best Innovation Idea Award Category).}
+          \customItemListEnd
+          \vspace{-13pt}
+
+
+      \customProject
+          {\textbf{\href{https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024/discussion/477648}
+          {\faLink\ Autonomous Vehicle Detection for Bangladesh Roads}} $|$ 
+          \emph{Python, YOLO, DETR, Deep Learning, Kaggle}}
+          {}
+          \customItemListStart
+            \customItem{Developed a solution using \textbf{YOLO, DETR}, and Deep Learning models for object detection in the BadODD dataset.}
+            \customItem{Utilized different road objects from \textbf{nine districts} of Bangladesh to cover a wide variety of objects, ensuring \textbf{43\%} accuracy in vehicle detection.}
+            \customItem{\textbf{Recognition:} Secured \textbf{3rd Place} in SUST DL Enigma 2024 - a Deep Learning competition.}
+          \customItemListEnd
+          \vspace{-13pt}
+
+      \customProject
+          {\textbf{\href{https://www.kaggle.com/competitions/ben10/code?competitionId=73047\&searchQuery=DataDojo}
+          {\faLink\ Bengali Automatic Speech Recognition (ASR) for Regional Dialects}} $|$ 
+          \emph{Python, Deep Learning, ASR}}
+          {}
+          \customItemListStart
+            \customItem{Processed a \textbf{79+ hour bengali speech corpus} to improve transcription accuracy for Bengali dialects.}
+            \customItem{Designed an end-to-end speech recognition pipeline using deep learning models that achieved \textbf{75\%} accuracy for speeches in specific dialects.}
+            \customItem{\textbf{Recognition:} Secured \textbf{4th Place} in the IUT CSE Fest Datathon.}
+          \customItemListEnd
+          \vspace{-13pt}
+
+      \customProject
+          {\textbf{\href{https://www.kaggle.com/competitions/dlsprint3/discussion/545581}
+          {\faLink\ Mathematical Reasoning for Low-Resource Language (Bengali)}} $|$ 
+          \emph{Python, Hugging Face, LLM Fine-Tuning}}
+          {}
+          \customItemListStart
+            \customItem{Enhanced \textbf{Qwen-7B} for Bangla reasoning by fine-tuning with curated math datasets.}
+            \customItem{\textbf{Applied Direct Preference Optimization (DPO)} and used \textbf{mergeKit} to improve inference quality for Bangla math problems.}
+            \customItem{\textbf{Recognition:} Secured \textbf{6th Place} in the BUET DL Sprint 3.0, a Deep Learning competition.}
+          \customItemListEnd
+          \vspace{-13pt}
+
+      % \customProject
+      %     {\textbf{\href{https://github.com/ahmedfahad04/AI-Symptom-to-Disease-Mapping}
+      %     {\faLink\ SympLink: AI-based Symptom-to-Disease Mapping}} $|$ 
+      %     \emph{Python, NLP, Deep Learning, DistilBERT, React}}
+      %     {}
+      %     \customItemListStart
+      %       \customItem{Built an AI-powered NLP system for symptom analysis and medical specialist recommendation.}
+      %       \customItem{Integrated \textbf{DistilBERT} for symptom-to-disease mapping that reduces the users' effort in finding relevant specialists.}
+      %     \customItemListEnd
+      %     \vspace{-13pt}
+      
+    \customSubHeadingContentEnd
+\vspace{3pt}
+
+
+%-----------EXTRACURRICULAR---------------
+\section{EXTRA-CURRICULAR \& LEADERSHIP ROLES}
+    \customSubHeadingContentStart
+
+        \customSubHeading{Aspire Institute}{Jun '25 – Aug '25}{Aspire Leaders Program Cohor 3 (Organizational Leadership)}{}
+        \customItemListStart
+            \customItem{Selected as \textbf{6,175 finalists} from over \textbf{36,000 global applicants} for a guided leadership development program.}
+            \customItem{Completed 40+ hours of masterclasses led by \textbf{Harvard Business School faculty} and other world-class educators.}
+            \customItem{Engaged in a \textbf{faculty-designed curriculum} focused on leadership, communication, and community impact.}
+            \customItem{Developed skills in \textbf{leadership}, \textbf{communication, and collaborative problem-solving} through interactive sessions.}
+        \customItemListEnd
+    
+        \customSubHeading{IIT Software Engineering Community (IITSEC)}{Apr '23 – Mar '24}{Seminar and Library Secretary}{}
+            \customItemListStart
+                \customItem{Organized seminars on \textbf{Blockchain} and \textbf{emerging technologies}.}
+                \customItem{Conducted \textbf{3 GitHub} and \textbf{Linux training sessions} for 40+ freshers.}
+                \customItem{Managed \textbf{CTF} event at \textbf{ITVerse2023}, a national IT Fest, with 50+ participants.}
+            \customItemListEnd
+    
+        \customSubHeading{Bangladesh Youngster Social Organisation (BYSO)}{Aug '20 – Jul '21}{Program Management Director}{}
+            \customItemListStart
+                \customItem{Organized programs for \textbf{International Mother Language Day} and \textbf{Eid-ul-Fitr}, fostering community engagement.}
+                \customItem{Initiated and led a \textbf{sewing machine donation project} to empower underprivileged women.}
+                \customItem{Organized and led \textbf{fundraising initiatives} to support flood-affected communities.}
+            \customItemListEnd
+            
+    \customSubHeadingContentEnd
+\vspace{-10pt}
+
+%-----------REFERENCE SECTION---------------
+
+
+%-----------REFERENCES---------------
+\section{REFERENCES}
+\vspace{4pt}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Dr. Kazi Muheymin-Us-Sakib} \\
+    Professor \\
+    Institute of Information Technology \\
+    University of Dhaka \\
+    Email: sakib@iit.du.ac.bd
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Dr. B.M. Mainul Hossain} \\
+    Professor \\
+    Institute of Information Technology \\
+    University of Dhaka \\
+    Email: mainul@iit.du.ac.bd
+\end{minipage}
+
+
+\end{document}
