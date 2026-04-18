@@ -7,7 +7,7 @@ subtitle: BSc in Software Engineering | Researcher | AI-Native Software Engineer
 profile:
   align: right
   image: my_profile.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Institute of Information Technology</p>
     <p>University of Dhaka</p>
