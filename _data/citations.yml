@@ -1,10 +1,14 @@
 metadata:
-  last_updated: '2026-04-20'
+  last_updated: '2026-04-29'
 papers:
   4nnVAk0AAAAJ:Tyk-4Ss8FVUC:
     citations: 1
     title: 'BanglaFake: Constructing and Evaluating a Specialized Bengali Deepfake Audio Dataset'
     year: '2025'
+  4nnVAk0AAAAJ:_FxGoFyzp5QC:
+    citations: 0
+    title: 'PromptMark: A Prompt-Guided Iterative-Feedback Framework for  Source Code Watermarking'
+    year: '2026'
   4nnVAk0AAAAJ:ufrVoPGSRksC:
     citations: 1
     title: Can We Trust the Source? A Systematic Review of Watermarking and Attribution for AI Generated Code
