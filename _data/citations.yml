@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-29'
+  last_updated: '2026-05-22'
 papers:
   4nnVAk0AAAAJ:Tyk-4Ss8FVUC:
     citations: 1
@@ -14,6 +14,6 @@ papers:
     title: Can We Trust the Source? A Systematic Review of Watermarking and Attribution for AI Generated Code
     year: '2026'
   4nnVAk0AAAAJ:zYLM7Y9cAGgC:
-    citations: 4
+    citations: 5
     title: 'Automatic vehicle detection using detr: A transformer-based approach for navigating treacherous roads'
     year: '2025'
